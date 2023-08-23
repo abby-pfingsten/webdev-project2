@@ -5,9 +5,12 @@
     <title>Booki</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- importing css style and normalize -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- importing google fonts api and font awesome-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,21 +21,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-    </style>
   </head>
   <body>
-    <header>
+    <section class="header">
       <img
         id="booki-logo"
         src="css/images/logo/Booki.png"
         alt="Booki Logo"
         title="Booki Logo"
       />
-    </header>
-    <nav>
-      <h1>Accomodation</h1>
-    </nav>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Accomodations</a>
+            <a href="#">Activities</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
   </body>
 </html>

@@ -1,3 +1,7 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
 header,
 nav {
   display: inline-block;
@@ -5,4 +9,10 @@ nav {
 
 #booki-logo {
   padding-left: 30px;
+  padding-top: 15px;
+  width: 100px;
+}
+
+nav ul li {
+  list-style: none;
 }
