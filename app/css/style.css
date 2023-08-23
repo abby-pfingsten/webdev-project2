@@ -16,3 +16,16 @@ nav {
 nav ul li {
   list-style: none;
 }
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #858c7b;
+}
+
+nav ul li a:hover {
+  border-top-style: solid;
+  border-top-color: #16db93;
+}
