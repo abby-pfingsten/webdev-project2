@@ -2,9 +2,10 @@
   font-family: "Raleway", sans-serif;
 }
 
-header,
-nav {
-  display: inline-block;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #booki-logo {
@@ -19,6 +20,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
+  color: #f2f2f2;
 }
 
 nav ul li a:visited {
@@ -27,5 +29,11 @@ nav ul li a:visited {
 
 nav ul li a:hover {
   border-top-style: solid;
-  border-top-color: #16db93;
+  border-top-color: #0065fc;
+  padding-top: 20px;
+  color: #0065fc;
+}
+
+.h2-heading {
+  padding-left: 30px;
 }
