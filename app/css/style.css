@@ -70,6 +70,20 @@ nav {
   padding-top: 20px;
   color: #0065fc;
 }
+
+.h2-heading {
+  padding-left: 30px;
+}
+
+.nav-links {
+  padding-right: 20px;
+}
+
+button,
+input {
+  margin-left: -10px;
+}
+
 /*  
 .h2-heading {
   padding-left: 30px;
@@ -85,23 +99,26 @@ input {
 } */
 
 /* for mobile to have border be on bottom */
-/* @media all and (max-width: 768px) {
-  nav ul li a:hover {
+@media all and (max-width: 768px) {
+  .nav-links ul li a:hover {
     border-bottom-style: solid;
     border-bottom-color: #0065fc;
     padding-bottom: 20px;
     color: #0065fc;
+    border-top-style: none;
   }
 
   .header {
     display: block;
+    /* align-items: center; */
   }
 
   nav {
     display: block;
+    /* align-items: center; */
   }
 
   button {
     display: none;
   }
-} */
+}
