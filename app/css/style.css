@@ -1,28 +1,6 @@
 * {
   font-family: "Raleway", sans-serif;
 }
-/* 
-/* for mobile to have border be on bottom */
-/* @media all and (max-width: 768px) {
-  nav ul li a:hover {
-    border-bottom-style: solid;
-    border-bottom-color: #0065fc;
-    padding-bottom: 20px;
-    color: #0065fc;
-  }
-
-  .header {
-    display: block;
-  }
-
-  nav {
-    display: block;
-  }
-
-  button {
-    display: none;
-  }
-} */
 
 .header {
   display: flex;
@@ -73,41 +51,33 @@ nav {
 
 .h2-heading {
   padding-left: 30px;
+  font-size: 15px;
 }
 
-.nav-links {
+.h2-heading form {
+  margin-left: 10px;
+}
+
+/* .nav-links {
   padding-right: 20px;
-}
-
-button,
-input {
-  margin-left: -10px;
-}
-
-/*  
-.h2-heading {
-  padding-left: 30px;
-}
-
-.nav-links {
-  padding-right: 20px;
-}
-
-button,
-input {
-  margin-left: -10px;
 } */
 
-/* for mobile to have border be on bottom */
-@media all and (max-width: 768px) {
-  .nav-links ul li a:hover {
-    border-bottom-style: solid;
-    border-bottom-color: #0065fc;
-    padding-bottom: 20px;
-    color: #0065fc;
-    border-top-style: none;
-  }
+button,
+input {
+  margin-left: -10px;
+  height: 20px;
+}
 
+button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  background-color: #0065fc;
+  height: 26px;
+}
+
+/* for mobile to have border be on bottom */
+@media (max-width: 768px) {
   .header {
     display: block;
     /* align-items: center; */
@@ -118,6 +88,39 @@ input {
     /* align-items: center; */
   }
 
+  #booki-logo {
+    padding-left: 15px;
+    padding-top: 10px;
+    width: 100px;
+    padding-right: 100px;
+  }
+
+  .nav-links {
+    position: absolute;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links ul li a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #0065fc;
+    padding-bottom: 20px;
+    color: #0065fc;
+    border-top-style: none;
+  }
+
+  .h2-heading {
+    display: block;
+    position: absolute;
+    flex-direction: row;
+    padding-left: 30px;
+    font-size: 10px;
+  }
   button {
     display: none;
   }
