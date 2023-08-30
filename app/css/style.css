@@ -22,7 +22,7 @@ nav {
   width: 100px;
   padding-right: 900px;
 }
-
+/* accomodation and activities styling */
 .nav-links {
   flex: 1;
   text-align: right;
@@ -49,59 +49,11 @@ nav {
   padding-top: 20px;
   color: #0065fc;
 }
-
-.h2-heading {
-  padding-left: 30px;
-  font-size: 15px;
-}
-
-.h2-heading form {
-  margin-left: 10px;
-}
-
-/* .nav-links {
-  padding-right: 20px;
-} */
-
-button,
-input {
-  margin-left: -10px;
-  height: 20px;
-}
-
-button {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  color: white;
-  background-color: #0065fc;
-  height: 26px;
-  border-style: none;
-}
-
-.filters ul li {
-  display: inline-block;
-}
-
-.filters ul li a {
-  text-decoration: none;
-  border-radius: 5px;
-  border-style: solid;
-  padding: 5px;
-}
-
-.filters ul li a:visited {
-  color: #858c7b;
-}
-
-/* .filters ul li a:hover {
-  border-radius: 5px;
-  border-style: solid;
-} */
-
-/* for mobile to have border be on bottom */
+/* media query for header and nav */
 @media (max-width: 768px) {
   .header {
-    display: block;
+    display: flex;
+    align-self: center;
     /* align-items: center; */
   }
 
@@ -131,19 +83,76 @@ button {
   .nav-links ul li a:hover {
     border-bottom-style: solid;
     border-bottom-color: #0065fc;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: #0065fc;
     border-top-style: none;
+    width: 100px;
   }
+}
 
-  .h2-heading {
-    display: block;
-    position: relative;
-    flex-direction: row;
-    /* padding-left: 30px; */
-    /* font-size: 10px; */
+/* h2 heading styling  */
+.h2-heading {
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+.h2-heading form {
+  margin-left: 10px;
+}
+
+/*  search bar styling  */
+button,
+input {
+  margin-left: -10px;
+  height: 20px;
+}
+
+button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  background-color: #0065fc;
+  height: 26px;
+  border-style: none;
+}
+
+/* for media query for h2 and search bar  */
+@media (max-width: 768px) {
+  .h2-heading h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 60px;
   }
   button {
     display: none;
   }
+}
+
+/* filters styling */
+.filters ul li {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  /* justify-content: space-between; */
+  /* flex-direction: row; */
+}
+
+.filters ul li:nth-child(1) {
+  padding-left: 10px;
+}
+
+.filters ul li a {
+  text-decoration: none;
+  border-radius: 30px;
+  border-style: solid;
+  padding: 10px;
+  color: black;
+  border-color: #736f6f;
+}
+
+.filters ul li a:hover {
+  background: #0065fc;
+  color: white;
+  border-style: none;
 }
