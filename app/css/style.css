@@ -2,6 +2,7 @@
   font-family: "Raleway", sans-serif;
 }
 
+/*  CLASS = HEADER AND CLASS = NAV-LINKS */
 header {
   display: flex;
   justify-content: space-between;
@@ -51,7 +52,7 @@ nav {
   padding-top: 20px;
   color: #0065fc;
 }
-/* media query for header and nav */
+/* MQ FOR CLASS = HEADER AND CLASS = NAV-LINKS */
 @media (max-width: 768px) {
   header {
     display: flex;
@@ -92,17 +93,22 @@ nav {
   }
 }
 
-/* h2 heading styling  */
+/* CLASS = SEARCH STYLING  */
+/* text styling */
 .search {
   padding-left: 30px;
   font-size: 15px;
 }
-
+/* search bar styling */
 .search form {
   margin-left: 10px;
 }
 
-/*  search bar styling  */
+.search form,
+i {
+  display: inline-block;
+}
+
 button,
 input {
   margin-left: -10px;
@@ -118,7 +124,7 @@ button {
   border-style: none;
 }
 
-/* for media query for h2 and search bar  */
+/* MQ FOR CLASS = SEARCH  */
 @media (max-width: 768px) {
   .search {
     padding-left: 30px;
