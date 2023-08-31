@@ -23,14 +23,15 @@
     ></script>
   </head>
   <body>
-    <!-- TODO: change to header tag -->
     <header>
       <nav>
         <img id="booki-logo" src="css/images/logo/Booki.png" alt="Booki Logo" />
         <div class="nav-links">
           <ul>
             <!-- TODO: should take down the page -->
-            <li><a href="#">Accomodations</a></li>
+            <li>
+              <a rel="noopener" target="_blank" href="search">Accomodations</a>
+            </li>
             <li><a href="#">Activities</a></li>
           </ul>
         </div>
@@ -40,10 +41,9 @@
     <!-- TODO: add search class name to section -->
     <section>
       <div class="h2-heading">
-        <!-- TODO: change tag to h1 -->
-        <h2>Find a place for your dream vacation</h2>
+        <h1>Find a place for your dream vacation</h1>
         <p>Downtown or in nature</p>
-        <!-- <i class="fa-solid fa-thumbs-up"></i> -->
+        <i class="fa-solid fa-location-dot"></i>
         <form action="./" method="get">
           <label for="search"></label>
           <input type="text" name="search" id="search" />

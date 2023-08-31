@@ -19,11 +19,12 @@ nav {
 }
 
 #booki-logo {
-  padding-left: 15px;
+  padding-left: 20px;
   padding-top: 15px;
   width: 100px;
   /* padding-right: 900px; */
 }
+
 /* accomodation and activities styling */
 .nav-links {
   flex: 1;
