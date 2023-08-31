@@ -22,7 +22,6 @@ nav {
   padding-left: 20px;
   padding-top: 15px;
   width: 100px;
-  /* padding-right: 900px; */
 }
 
 /* accomodation and activities styling */
@@ -96,7 +95,8 @@ nav {
 /* h2 heading styling  */
 .h2-heading {
   padding-left: 30px;
-  font-size: 15px;
+  font-size: 10px;
+  margin-top: 60px;
 }
 
 .h2-heading form {
