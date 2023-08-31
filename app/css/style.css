@@ -94,41 +94,54 @@ nav {
 }
 
 /* CLASS = SEARCH STYLING  */
-/* text styling */
+/* text styling gives padding to text
+   and to search bar */
 .search {
   padding-left: 30px;
   font-size: 15px;
 }
 /* search bar styling */
 .search form {
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  /* border-left-style: none; */
 }
 
 .search input {
-  margin-left: -15px;
-  height: 40px;
+  /* margin-left: -15px; */
+  /* height: 25px; */
+  border-left-style: none;
+  border-top-style: solid;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-top-color: #f2f2f2;
+  border-bottom-color: #f2f2f2;
 }
+
 /* putting the icon next to the search bar */
 .search form,
 i {
   display: inline-block;
 }
-/* location image styling */
+/* styling the location image */
 i {
   border-style: solid;
-  padding: 5px;
+  padding: 10px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
-  margin: auto;
+  /* margin: auto; */
+  /* height: auto; */
+  /* position: relative; */
+  margin-right: 6px;
 }
+/*  getting the search button closer to the search bar */
 button,
 input {
   margin-left: -10px;
   height: 20px;
 }
-
+/* styling the search bar to be rounded and the height */
 button {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
