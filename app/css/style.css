@@ -100,6 +100,30 @@ nav {
   padding-left: 30px;
   font-size: 15px;
 }
+/* when you click search box it does not
+   highlight the box */
+.search input[type="text"] {
+  /* Your CSS styles for the input element go here */
+  outline: none;
+}
+.search form,
+i {
+  display: inline-block;
+}
+
+/* styling the location image */
+i {
+  border-style: solid;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  /* margin: auto; */
+  /* height: auto; */
+  /* position: relative; */
+  margin-right: 6px;
+}
 
 .search input {
   /* margin-left: -15px; */
@@ -116,23 +140,7 @@ nav {
 }
 
 /* putting the icon next to the search bar */
-.search form,
-i {
-  display: inline-block;
-}
-/* styling the location image */
-i {
-  border-style: solid;
-  padding: 10px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  background-color: #f2f2f2;
-  border-color: #f2f2f2;
-  /* margin: auto; */
-  /* height: auto; */
-  /* position: relative; */
-  margin-right: 6px;
-}
+
 /* styling the search bar to be rounded and the height
   and its proximity to the actual text input */
 .search button {
