@@ -100,21 +100,19 @@ nav {
   padding-left: 30px;
   font-size: 15px;
 }
-/* search bar styling */
-.search form {
-  /* margin-left: 10px; */
-  /* border-left-style: none; */
-}
 
 .search input {
   /* margin-left: -15px; */
   /* height: 25px; */
+  margin-left: -10px;
+  height: 20px;
   border-left-style: none;
   border-top-style: solid;
   border-right-style: none;
   border-bottom-style: solid;
   border-top-color: #f2f2f2;
   border-bottom-color: #f2f2f2;
+  height: 32.5px;
 }
 
 /* putting the icon next to the search bar */
@@ -136,18 +134,17 @@ i {
   margin-right: 6px;
 }
 /*  getting the search button closer to the search bar */
-button,
-input {
+/* .search input {
   margin-left: -10px;
   height: 20px;
-}
+} */
 /* styling the search bar to be rounded and the height */
-button {
+.search button {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   color: white;
   background-color: #0065fc;
-  height: 26px;
+  height: 36px;
   border-style: none;
 }
 
