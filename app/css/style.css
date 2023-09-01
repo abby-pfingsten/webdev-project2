@@ -92,7 +92,7 @@ nav {
     width: 100px;
   }
 }
-
+/* ---------------------- */
 /* CLASS = SEARCH STYLING  */
 /* text styling gives padding to text
    and to search bar */
@@ -103,9 +103,9 @@ nav {
 /* when you click search box it does not
    highlight the box */
 .search input[type="text"] {
-  /* Your CSS styles for the input element go here */
   outline: none;
 }
+
 .search form,
 i {
   display: inline-block;
@@ -183,12 +183,22 @@ i {
     height: 13px;
   }
 }
+/* -------------- */
+/* CLASS = FILTERS STYLING */
 
-/* filters styling */
+.filters h2 {
+  padding-left: 13px;
+}
+
+.filters h2,
+ul {
+  display: inline-block;
+  margin-left: 10px;
+}
 .filters ul li {
   display: inline-block;
   padding: 5px;
-  margin: 10px;
+  /* margin: 10px; */
   /* justify-content: space-between; */
   /* flex-direction: row; */
 }
