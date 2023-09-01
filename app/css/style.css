@@ -133,12 +133,8 @@ i {
   /* position: relative; */
   margin-right: 6px;
 }
-/*  getting the search button closer to the search bar */
-/* .search input {
-  margin-left: -10px;
-  height: 20px;
-} */
-/* styling the search bar to be rounded and the height */
+/* styling the search bar to be rounded and the height
+  and its proximity to the actual text input */
 .search button {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -146,6 +142,7 @@ i {
   background-color: #0065fc;
   height: 36px;
   border-style: none;
+  margin-left: -10px;
 }
 
 /* MQ FOR CLASS = SEARCH  */
