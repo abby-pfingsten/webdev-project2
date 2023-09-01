@@ -112,7 +112,7 @@ i {
 }
 
 /* styling the location image */
-i {
+.search i#location {
   border-style: solid;
   padding: 10px;
   border-top-left-radius: 5px;
@@ -125,6 +125,10 @@ i {
   margin-right: 6px;
 }
 
+/* styling the magnifying glass image */
+.search i#magnifying-glass {
+  display: none;
+}
 .search input {
   /* margin-left: -15px; */
   /* height: 25px; */
@@ -161,14 +165,9 @@ i {
     margin-top: 60px;
     font-size: 10px;
   }
-
-  /* I don't think this is necessary?  */
-  /* .search h2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 60px;
-  } */
+  p {
+    font-size: 15px;
+  }
   button {
     display: none;
   }
