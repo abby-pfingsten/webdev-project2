@@ -119,9 +119,6 @@ i {
   border-bottom-left-radius: 5px;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
-  /* margin: auto; */
-  /* height: auto; */
-  /* position: relative; */
   margin-right: 6px;
 }
 
@@ -129,6 +126,8 @@ i {
 .search i#magnifying-glass {
   display: none;
 }
+
+/* styling the text input area */
 .search input {
   /* margin-left: -15px; */
   /* height: 25px; */
@@ -142,8 +141,6 @@ i {
   border-bottom-color: #f2f2f2;
   height: 32.5px;
 }
-
-/* putting the icon next to the search bar */
 
 /* styling the search bar to be rounded and the height
   and its proximity to the actual text input */
@@ -170,6 +167,19 @@ i {
   }
   button {
     display: none;
+  }
+
+  /* styling the magnifying glass image */
+  .search i#magnifying-glass {
+    display: inline-block;
+    border-style: solid;
+    padding: 10px;
+    padding-top: 12px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    /* margin-right: 6px; */
+    height: 13px;
   }
 }
 
