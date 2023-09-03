@@ -193,19 +193,20 @@ i {
 .filters h2,
 ul {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .filters ul li {
   display: inline-block;
   padding: 5px;
+  font-weight: bold;
   /* margin: 10px; */
   /* justify-content: space-between; */
   /* flex-direction: row; */
 }
 
-.filters ul li:nth-child(1) {
-  padding-left: 10px;
-}
+/* .filters ul li:nth-child(1) {
+  padding-left: -100px;
+} */
 
 .filters ul li a {
   text-decoration: none;
