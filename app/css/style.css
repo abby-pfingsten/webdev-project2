@@ -179,27 +179,24 @@ i {
 /* -------------- */
 /* CLASS = FILTERS STYLING */
 
-.filters {
+.filters-container {
   display: flex;
   align-items: center;
 }
 /* padding for the title of "Filters" */
-.filters h2 {
+.filters-container h2 {
   padding-left: 30px;
 }
 
 /* the style of the unordered list */
-.filters ul li {
+.filters-container ul li {
   display: inline-block;
   margin: 5px;
   font-weight: bold;
-  /* margin: 10px; */
-  /* justify-content: space-between; */
-  /* flex-direction: row; */
 }
 
 /* the style of each individual filter pill */
-.filters ul li a {
+.filters-container ul li a {
   text-decoration: none;
   border-style: solid;
   padding: 10px 10px 10px 20px;
@@ -211,12 +208,12 @@ i {
 }
 
 /* what happens when you hover over a filter */
-.filters ul li a:hover {
+.filters-container ul li a:hover {
   color: #0065fc;
 }
 
 /* style of the images next to each filter */
-.filters i#filter-images {
+.filters-container i#filter-images {
   border-radius: 30px;
   border-style: solid;
   color: #0065fc;
@@ -226,24 +223,45 @@ i {
   margin-right: -20px;
 }
 
+.info-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
 #info {
   display: block;
   margin-left: 30px;
   padding: 8px;
   border-style: solid;
   border-color: #f2f2f2;
-  border-radius: 50%;
   font-size: 10px;
+  align-self: center;
 }
 
-#info-text {
-  display: block;
+#text {
+  margin-left: 10px;
 }
 
 /* MQ FOR CLASS = FILTERS  */
 @media (max-width: 768px) {
-  .filters {
+  .filters-container {
     display: flex;
     flex-flow: row wrap;
+  }
+
+  /* getting the filter buttons closer to the title */
+  .filters-container h2 {
+    margin-bottom: -10px;
+  }
+
+  /* making the filters closer to the left of the screen */
+  .filters-container ul {
+    margin-left: -20px;
+  }
+  /* the style of the unordered list */
+  .filters-container ul li {
+    font-size: 12px;
   }
 }
