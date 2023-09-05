@@ -179,15 +179,13 @@ i {
 /* -------------- */
 /* CLASS = FILTERS STYLING */
 
+.filters {
+  display: flex;
+  align-items: center;
+}
 /* padding for the title of "Filters" */
 .filters h2 {
-  padding-left: 13px;
-}
-
-.filters h2,
-ul {
-  display: inline-block;
-  margin-left: 20px;
+  padding-left: 30px;
 }
 
 /* the style of the unordered list */
@@ -229,7 +227,7 @@ ul {
 }
 
 #info {
-  display: inline-block;
+  display: block;
   margin-left: 30px;
   padding: 8px;
   border-style: solid;
@@ -239,9 +237,13 @@ ul {
 }
 
 #info-text {
-  display: inline-block;
+  display: block;
 }
 
 /* MQ FOR CLASS = FILTERS  */
 @media (max-width: 768px) {
+  .filters {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
