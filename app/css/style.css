@@ -56,23 +56,27 @@ nav {
 @media (max-width: 768px) {
   header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   nav {
-    display: block;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -50px;
   }
 
   .nav-links {
-    position: absolute;
+    position: relative;
   }
 
   .nav-links ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
+    flex-direction: row; /* stack links vertically */
+    align-items: center;
+    padding: 0;
   }
 
   .nav-links ul li a:hover {
@@ -84,6 +88,7 @@ nav {
     width: 100px;
   }
 }
+
 /* ---------------------- */
 /* CLASS = SEARCH STYLING  */
 /* text styling gives padding to text
@@ -231,13 +236,19 @@ i {
 }
 
 #info {
-  display: block;
+  display: flex;
   margin-left: 30px;
   padding: 8px;
   border-style: solid;
   border-color: #f2f2f2;
-  font-size: 10px;
-  align-self: center;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 #text {
@@ -263,5 +274,9 @@ i {
   /* the style of the unordered list */
   .filters-container ul li {
     font-size: 12px;
+  }
+
+  #info {
+    font-size: 13px;
   }
 }
