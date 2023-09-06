@@ -54,13 +54,6 @@ nav {
 }
 /* MQ FOR CLASS = HEADER AND CLASS = NAV-LINKS */
 @media (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   nav {
     display: flex;
     flex-direction: column;
@@ -139,6 +132,10 @@ i {
   height: 32.5px;
 }
 
+.search input[value=" Marseille, France"] {
+  font-weight: bold;
+}
+
 /* styling the search bar to be rounded and the height
   and its proximity to the actual text input */
 .search button {
@@ -165,6 +162,10 @@ i {
   }
   button {
     display: none;
+  }
+  /* styling the location image */
+  .search i#location {
+    padding: 12px;
   }
 
   /* styling the magnifying glass image */
@@ -274,6 +275,10 @@ i {
   /* the style of the unordered list */
   .filters-container ul li {
     font-size: 12px;
+  }
+
+  .filters-container ul li:nth-child(2) {
+    order: -1;
   }
 
   #info {
