@@ -125,10 +125,7 @@ i {
 
 /* styling the text input area */
 .search input {
-  /* margin-left: -15px; */
-  /* height: 25px; */
   margin-left: -10px;
-  height: 20px;
   border-left-style: none;
   border-top-style: solid;
   border-right-style: none;
@@ -199,6 +196,10 @@ i {
 .filters-container h2 {
   padding-left: 30px;
   font-size: 15px;
+}
+
+.filters-container ul {
+  padding-left: 20px;
 }
 
 /* the style of the unordered list */
