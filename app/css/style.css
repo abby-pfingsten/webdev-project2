@@ -6,7 +6,6 @@
 header {
   display: flex;
   justify-content: space-between;
-  align-items: left;
   position: relative;
   width: 100%;
 }
@@ -14,7 +13,6 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: left;
   padding: 2px 10px;
   width: 100%;
 }
@@ -64,7 +62,7 @@ nav {
   .nav-links {
     position: relative;
   }
-
+  /* TODO: width 100% for parent and 50% for the child */
   .nav-links ul {
     display: flex;
     flex-direction: row; /* stack links vertically */
@@ -90,6 +88,9 @@ nav {
   padding-left: 30px;
   font-size: 15px;
 }
+
+/* TODO: change font size of h1 and h2 on desktop and mobile */
+
 /* when you click search box it does not
    highlight the box */
 .search input[type="text"] {
@@ -101,6 +102,7 @@ i {
   display: inline-block;
 }
 
+/* TODO: make border radius same as search button border */
 /* styling the location image */
 .search i#location {
   border-style: solid;
@@ -131,8 +133,8 @@ i {
   border-bottom-color: #f2f2f2;
   height: 32.5px;
 }
-
-.search input[value=" Marseille, France"] {
+/* makes the text in the value be bold */
+.search input[value] {
   font-weight: bold;
 }
 
@@ -263,6 +265,8 @@ i {
     flex-flow: row wrap;
   }
 
+  /* TODO - try wrapping ul in flex as well  */
+
   /* getting the filter buttons closer to the title */
   .filters-container h2 {
     margin-bottom: -10px;
@@ -277,7 +281,8 @@ i {
     font-size: 12px;
   }
 
-  .filters-container ul li:nth-child(2) {
+  .filters-container ul li:nth-child(1),
+  ul li:nth-child(3) {
     order: -1;
   }
 
