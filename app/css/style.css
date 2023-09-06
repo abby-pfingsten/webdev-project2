@@ -221,7 +221,7 @@ i {
 }
 
 /* style of the images next to each filter */
-.filters-container i#filter-images {
+.filter-images {
   border-radius: 30px;
   border-style: solid;
   color: #0065fc;
