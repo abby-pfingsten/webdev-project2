@@ -68,6 +68,7 @@ nav {
     flex-direction: row; /* stack links vertically */
     align-items: center;
     padding: 0;
+    width: 100px;
   }
 
   .nav-links ul li a:hover {
@@ -282,10 +283,16 @@ i {
 
   /* making the filters closer to the left of the screen */
   .filters-container ul {
-    margin-left: -20px;
+    display: flex;
+    flex-flow: row wrap;
+    /* margin-left: -20px; */
+    padding-top: 20px;
   }
   /* the style of the unordered list */
   .filters-container ul li {
+    display: flex;
+    flex-flow: row wrap;
+
     font-size: 12px;
   }
 
