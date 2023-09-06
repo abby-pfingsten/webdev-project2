@@ -91,6 +91,13 @@ nav {
 
 /* TODO: change font size of h1 and h2 on desktop and mobile */
 
+/* changing font size of h1 and p */
+.search h1 {
+  font-size: 15px;
+}
+.search p {
+  font-size: 12px;
+}
 /* when you click search box it does not
    highlight the box */
 .search input[type="text"] {
@@ -194,6 +201,7 @@ i {
 /* padding for the title of "Filters" */
 .filters-container h2 {
   padding-left: 30px;
+  font-size: 15px;
 }
 
 /* the style of the unordered list */
@@ -201,6 +209,7 @@ i {
   display: inline-block;
   margin: 5px;
   font-weight: bold;
+  font-size: 12px;
 }
 
 /* the style of each individual filter pill */
@@ -245,17 +254,18 @@ i {
   border-style: solid;
   border-color: #f2f2f2;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   align-items: center;
   justify-content: center;
   color: #0065fc;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 #text {
   margin-left: 10px;
+  font-size: 13px;
 }
 
 /* MQ FOR CLASS = FILTERS  */
