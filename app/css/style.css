@@ -107,13 +107,12 @@ i {
   display: inline-block;
 }
 
-/* TODO: make border radius same as search button border */
 /* styling the location image */
 .search i#location {
   border-style: solid;
   padding: 10px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
   margin-right: 6px;
