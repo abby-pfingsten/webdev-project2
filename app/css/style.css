@@ -1,8 +1,312 @@
-header,
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+/*  CLASS = HEADER AND CLASS = NAV-LINKS */
+header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
 nav {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 10px;
+  width: 100%;
 }
 
 #booki-logo {
+  padding-left: 20px;
+  padding-top: 15px;
+  width: 100px;
+}
+
+/* accomodation and activities styling */
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  padding: 8px 12px;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links ul li a:visited {
+  color: #858c7b;
+}
+
+.nav-links ul li a:hover {
+  border-top-style: solid;
+  border-top-color: #0065fc;
+  padding-top: 20px;
+  color: #0065fc;
+}
+/* MQ FOR CLASS = HEADER AND CLASS = NAV-LINKS */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -50px;
+    padding: 0;
+  }
+
+  /* this makes it so that the nav takes the entire 
+     space of the screen aka parent*/
+  .nav-links {
+    width: 100%;
+  }
+  .nav-links ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+  /* make 50% width and align text in center as child */
+  .nav-links ul li {
+    width: 50%;
+    text-align: center;
+  }
+
+  .nav-links ul li:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #0065fc;
+    padding-bottom: 10px;
+    color: #0065fc;
+    border-bottom-width: 3px;
+  }
+  /* since in desktop the hover effect was on a
+we have to add this so border from top is not visible */
+  .nav-links ul li a:hover {
+    border-top-style: none;
+  }
+}
+
+/* ---------------------- */
+/* CLASS = SEARCH STYLING  */
+/* text styling gives padding to text
+   and to search bar */
+.search {
   padding-left: 30px;
+  font-size: 15px;
+}
+
+/* changing font size of h1 and p */
+.search h1 {
+  font-size: 15px;
+}
+.search p {
+  font-size: 12px;
+}
+/* when you click search box it does not
+   highlight the box */
+.search input[type="text"] {
+  outline: none;
+}
+
+.search form,
+i {
+  display: inline-block;
+}
+
+/* styling the location image */
+.search i#location {
+  border-style: solid;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  margin-right: 6px;
+}
+
+/* styling the magnifying glass image */
+.search i#magnifying-glass {
+  display: none;
+}
+
+/* styling the text input area */
+.search input {
+  margin-left: -10px;
+  border-left-style: none;
+  border-top-style: solid;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-top-color: #f2f2f2;
+  border-bottom-color: #f2f2f2;
+  height: 32.5px;
+}
+/* makes the text in the value be bold */
+.search input[value] {
+  font-weight: bold;
+}
+
+/* styling the search bar to be rounded and the height
+  and its proximity to the actual text input */
+.search button {
+  font-weight: bold;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  background-color: #0065fc;
+  height: 36px;
+  border-style: none;
+  margin-left: -10px;
+}
+
+/* MQ FOR CLASS = SEARCH  */
+@media (max-width: 768px) {
+  .search {
+    padding-left: 30px;
+    font-size: 15px;
+    margin-top: 60px;
+    font-size: 10px;
+  }
+  p {
+    font-size: 15px;
+  }
+  button {
+    display: none;
+  }
+  /* styling the location image */
+  .search i#location {
+    padding: 12px;
+  }
+
+  /* styling the magnifying glass image */
+  .search i#magnifying-glass {
+    display: inline-block;
+    border-style: solid;
+    padding: 10px;
+    padding-top: 12px;
+    border-radius: 10px;
+    background-color: #0065fc;
+    border-color: #0065fc;
+    color: white;
+    margin-left: -10px;
+    height: 13px;
+  }
+}
+/* -------------- */
+/* CLASS = FILTERS STYLING */
+
+.filters-container {
+  display: flex;
+  align-items: center;
+}
+/* padding for the title of "Filters" */
+.filters-container h2 {
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+.filters-container ul {
+  padding-left: 20px;
+}
+
+/* the style of the unordered list */
+.filters-container ul li {
+  display: inline-block;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* the style of each individual filter pill */
+.filters-container ul li a {
+  text-decoration: none;
+  border-style: solid;
+  padding: 10px 10px 10px 20px;
+  color: black;
+  border-color: #f2f2f2;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-left-style: none;
+}
+
+/* what happens when you hover over a filter */
+.filters-container ul li a:hover {
+  color: #0065fc;
+}
+
+/* style of the images next to each filter */
+.filter-images {
+  border-radius: 30px;
+  border-style: solid;
+  color: #0065fc;
+  background-color: #deebff;
+  border-color: #deebff;
+  padding: 12px;
+  margin-right: -20px;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+#info {
+  display: flex;
+  margin-left: 30px;
+  padding: 7px;
+  border-style: solid;
+  border-color: #f2f2f2;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+#text {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+/* MQ FOR CLASS = FILTERS  */
+@media (max-width: 768px) {
+  .filters-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  /* getting the filter buttons closer to the title */
+  .filters-container h2 {
+    margin-bottom: -10px;
+  }
+
+  /* making the filters closer to the left of the screen */
+  .filters-container ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  /* the style of the unordered list */
+  .filters-container ul li {
+    font-size: 12px;
+  }
+
+  .filters-container ul li:nth-child(1),
+  ul li:nth-child(3) {
+    order: -1;
+  }
+
+  #info {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    margin-left: 10px;
+  }
 }

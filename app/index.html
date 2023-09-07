@@ -5,34 +5,82 @@
     <title>Booki</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- importing css style and normalize -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- importing google fonts api and font awesome-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-    </style>
+    <script
+      src="https://kit.fontawesome.com/a27bad9647.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <img
-        id="booki-logo"
-        src="css/images/logo/Booki.png"
-        alt="Booki Logo"
-        title="Booki Logo"
-      />
+      <nav>
+        <img id="booki-logo" src="css/images/logo/Booki.png" alt="Booki Logo" />
+        <div class="nav-links">
+          <ul>
+            <!-- TODO: should take down the page -->
+            <li>
+              <a href="#">Accomodations</a>
+            </li>
+            <li><a href="#">Activities</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <nav>
-      <h1>Accomodation</h1>
-    </nav>
+
+    <section class="search">
+      <h1>Find a place for your dream vacation</h1>
+      <p>Downtown or in nature</p>
+      <i class="fa-solid fa-location-dot" id="location"></i>
+      <form action="./" method="get">
+        <label for="search"></label>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          value=" Marseille, France"
+        />
+        <button type="submit" value="Submit">Search</button>
+        <i class="fa-solid fa-magnifying-glass" id="magnifying-glass"></i>
+      </form>
+    </section>
+
+    <section class="filters">
+      <div class="filters-container">
+        <h2>Filters</h2>
+        <ul>
+          <li>
+            <i class="fa-solid fa-money-bill-wave filter-images"></i>
+            <span><a href="#">Low cost</a></span>
+          </li>
+          <li>
+            <i class="fa-solid fa-child-reaching filter-images"></i>
+            <span><a href="#">Family-friendly</a></span>
+          </li>
+          <li>
+            <i class="fa-solid fa-heart filter-images"></i>
+            <span><a href="#">Romantic</a></span>
+          </li>
+          <li>
+            <i class="fa-solid fa-dog filter-images"></i>
+            <span><a href="#">Pets allowed</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="info-text">
+        <i class="fa-solid fa-info" id="info"></i>
+        <p id="text">More than 500 accomodations are avaiable in this city</p>
+      </div>
+    </section>
   </body>
 </html>
