@@ -285,13 +285,10 @@ i {
   .filters-container ul {
     display: flex;
     flex-flow: row wrap;
-    /* margin-left: -20px; */
     padding-top: 20px;
   }
   /* the style of the unordered list */
   .filters-container ul li {
-    display: flex;
-    flex-flow: row wrap;
     font-size: 12px;
   }
 
