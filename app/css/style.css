@@ -57,17 +57,23 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-bottom: -50px;
+    padding: 0;
   }
 
-  .nav-links {
-    position: relative;
+  /* this makes it so that the nav takes the entire 
+     space of the screen */
+  div.nav-links {
+    width: 100%;
   }
   /* TODO: width 100% for parent and 50% for the child */
   .nav-links ul {
     display: flex;
-    flex-direction: row; /* stack links vertically */
-    align-items: center;
     padding: 0;
+    justify-content: center;
+    /* flex-direction: row; stack links vertically */
+    /* align-items: center; */
+    /* padding: 0; */
+    /* text-align: center; */
     /* width: 100px; */
   }
 
