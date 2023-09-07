@@ -61,29 +61,32 @@ nav {
   }
 
   /* this makes it so that the nav takes the entire 
-     space of the screen */
-  div.nav-links {
+     space of the screen aka parent*/
+  .nav-links {
     width: 100%;
   }
-  /* TODO: width 100% for parent and 50% for the child */
   .nav-links ul {
     display: flex;
     padding: 0;
     justify-content: center;
-    /* flex-direction: row; stack links vertically */
-    /* align-items: center; */
-    /* padding: 0; */
-    /* text-align: center; */
-    /* width: 100px; */
+  }
+  /* make 50% width and align text in center as child */
+  .nav-links ul li {
+    width: 50%;
+    text-align: center;
   }
 
-  .nav-links ul li a:hover {
+  .nav-links ul li:hover {
     border-bottom-style: solid;
     border-bottom-color: #0065fc;
     padding-bottom: 10px;
     color: #0065fc;
+    border-bottom-width: 3px;
+  }
+  /* since in desktop the hover effect was on a
+we have to add this so border from top is not visible */
+  .nav-links ul li a:hover {
     border-top-style: none;
-    width: 100px;
   }
 }
 
