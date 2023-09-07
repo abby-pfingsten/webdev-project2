@@ -274,8 +274,6 @@ i {
     flex-flow: row wrap;
   }
 
-  /* TODO - try wrapping ul in flex as well  */
-
   /* getting the filter buttons closer to the title */
   .filters-container h2 {
     margin-bottom: -10px;
@@ -285,7 +283,6 @@ i {
   .filters-container ul {
     display: flex;
     flex-flow: row wrap;
-    padding-top: 20px;
   }
   /* the style of the unordered list */
   .filters-container ul li {
