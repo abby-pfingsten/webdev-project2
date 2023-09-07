@@ -344,15 +344,15 @@ i {
   font-size: 16px;
 }
 
-.cards {
+.a-cards {
   padding-left: 45px;
 }
-.card {
+.hotel-cards {
   display: grid;
   grid-template-rows: max-content 200px 1fr;
 }
 
-.card img {
+.hotel-cards img {
   object-fit: cover;
   width: 80%;
   border-top-right-radius: 5px;
@@ -361,7 +361,14 @@ i {
   padding: 5px;
 }
 
-.card div {
+.hotel-cards div {
   border-style: dashed;
   padding: 5px;
+}
+
+/* so that the title of the hotel does not get
+affected by the same padding that the Accomodations
+title has */
+.a-cards h2 {
+  padding: 0;
 }
