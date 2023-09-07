@@ -81,7 +81,7 @@ nav {
   }
 }
 
-/* ---------------------- */
+/* ------------------------------------------------------ */
 /* CLASS = SEARCH STYLING  */
 /* text styling gives padding to text
    and to search bar */
@@ -186,7 +186,7 @@ i {
     height: 13px;
   }
 }
-/* -------------- */
+/* ------------------------------------------------------ */
 /* CLASS = FILTERS STYLING */
 
 .filters-container {
@@ -307,3 +307,25 @@ i {
     margin-left: 10px;
   }
 }
+
+/* MAIN */
+/* ------------------------------------------------------ */
+/* CLASS = ACCOMODATIONS */
+
+.accomodations {
+  padding-left: 45px;
+  font-size: 10px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: grid;
+}
+.accomodations img {
+  object-fit: cover;
+  /* width: 40%; */
+  /* height: 40%; */
+}
+/* Add some padding inside the card container */
+/* .container {
+  padding: 2px 16px;
+} */
