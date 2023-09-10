@@ -336,7 +336,8 @@ main {
 
 .hotel-cards {
   display: grid;
-  grid-template-rows: max-content 200px 1fr;
+  /* grid-template-rows: 250px 1fr; */
+  /* grid-row-gap: -100px; */
 }
 
 .hotel-cards img {
