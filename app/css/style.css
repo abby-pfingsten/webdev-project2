@@ -339,6 +339,14 @@ main {
   grid-template-rows: 250px 1fr;
   /* grid-row-gap: -100px; */
 }
+/* remove underneath hyperlink for each */
+.hotel-cards a {
+  text-decoration: none;
+}
+/* get the nights starting at text closer to hotel title */
+.hotel-cards p {
+  margin-top: -5px;
+}
 
 .hotel-cards img {
   object-fit: cover;
@@ -359,6 +367,15 @@ main {
   background-color: white;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+/* adjust the spacing of the stars */
+.hotel-cards i {
+  letter-spacing: -4px; /* Adjust this value to control the spacing */
+}
+
+.hotel-cards i.empty {
+  color: gray;
+  
 }
 
 .a-cards {
