@@ -315,14 +315,20 @@ i {
 /* ------------------------------------------------------ */
 /* CLASS = ACCOMODATIONS */
 
+main {
+  display: flex;
+  flex-direction: row;
+}
 .accomodations {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 20px;
+  /* grid-gap: 20px; */
   background-color: #f2f2f2;
+  flex-basis: 60%;
 }
 
 .accomodations h2 {
+  /* display: block; */
   padding-left: 40px;
   font-size: 16px;
 }
@@ -334,7 +340,8 @@ i {
 
 .hotel-cards img {
   object-fit: cover;
-  width: 80%;
+  width: 85%;
+  height: 50%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-style: none;
@@ -344,7 +351,7 @@ i {
 
 .hotel-cards div {
   padding: 5px;
-  width: 80%; /* make same width as image  */
+  width: 85%; /* make same width as image  */
   border-top-style: none;
   margin-top: 0;
   background-color: white;
@@ -380,4 +387,11 @@ title has */
   font-size: 5px;
   color: #0065fc;
   text-decoration: none;
+}
+
+.a-cards:nth-child(1),
+.a-cards:nth-child(0),
+.a-cards:nth-child(-1) {
+  padding-top: 65px;
+  /* margin-left: 10px; */
 }
