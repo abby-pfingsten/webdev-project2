@@ -336,7 +336,7 @@ main {
 
 .hotel-cards {
   display: grid;
-  /* grid-template-rows: 250px 1fr; */
+  grid-template-rows: 250px 1fr;
   /* grid-row-gap: -100px; */
 }
 
@@ -394,6 +394,17 @@ title has */
 .a-cards:nth-child(1),
 .a-cards:nth-child(0),
 .a-cards:nth-child(-1) {
-  padding-top: 65px;
+  padding-top: 25px;
   /* margin-left: 10px; */
+}
+
+/* .a-cards:nth-child(-2),
+.a-cards:nth-child(-3),
+.a-cards:nth-child(-4) {
+  padding-top: 15px;
+
+} */
+
+.show-more {
+  margin-left: 10px;
 }
