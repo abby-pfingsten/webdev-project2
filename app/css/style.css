@@ -375,7 +375,6 @@ main {
 
 .hotel-cards i.empty {
   color: gray;
-  
 }
 
 .a-cards {
@@ -412,7 +411,6 @@ title has */
 .a-cards:nth-child(0),
 .a-cards:nth-child(-1) {
   padding-top: 25px;
-  /* margin-left: 10px; */
 }
 
 /* .a-cards:nth-child(-2),
@@ -423,5 +421,43 @@ title has */
 } */
 
 .show-more {
+  margin-top: -5px;
   margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+/* MQ FOR CLASS = ACCOMODATIONS */
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    /* flex-direction: row; */
+  }
+
+  .accomodations {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    background-color: white;
+  }
+
+  .hotel-cards img {
+    object-fit: cover;
+    width: 100%;
+    /* height: 50%; */
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-style: none;
+    padding: 5px;
+    background-color: white;
+  }
+  .hotel-cards div {
+    width: 100%;
+  }
+
+  .a-cards {
+    padding-left: 0px;
+    width: 100%;
+    margin-right: -100px;
+  }
 }
