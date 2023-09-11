@@ -329,7 +329,6 @@ main {
 }
 
 .accomodations h2 {
-  /* display: block; */
   padding-left: 40px;
   font-size: 16px;
 }
@@ -459,3 +458,29 @@ title has */
 
 /* ------------------------------------------------------ */
 /* CLASS = MOST POPULAR */
+
+.most-popular {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  background-color: #f2f2f2;
+  flex-basis: 33%;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.most-popular h2 {
+  margin: 30px 0 0 30px;
+  font-size: 20px;
+}
+
+/* have star be next to title */
+.most-popular h2,
+i {
+  display: inline-block;
+}
+
+.most-popular i {
+  margin-left: 210px;
+  font-size: 20px;
+}
