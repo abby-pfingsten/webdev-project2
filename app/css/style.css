@@ -441,14 +441,18 @@ title has */
     flex-basis: 100%;
     background-color: white;
   }
-
+  /*  padding of show more */
   .accomodations h2 {
     padding-left: 0;
   }
 
   .a-cards {
     padding-left: 0px;
-    width: 100%;
-    margin-right: -100px;
+    /* width: 100%; */
+    /* margin-right: -100px; */
+  }
+
+  .show-more {
+    margin: 0;
   }
 }
