@@ -357,6 +357,8 @@ main {
   border-bottom-style: none;
   padding: 5px;
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 .hotel-cards div {
@@ -367,6 +369,8 @@ main {
   background-color: white;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 /* adjust the spacing of the stars */
 .hotel-cards i {
@@ -379,6 +383,8 @@ main {
 
 .a-cards {
   padding-left: 45px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; */
 }
 
 .a-cards:visited {
@@ -430,21 +436,23 @@ title has */
 
 @media (max-width: 768px) {
   main {
-    width: 100%;
-    /* flex-direction: row; */
+    /* width: 100%; */
   }
 
   .accomodations {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    /* width: 100%; */
     background-color: white;
   }
 
+  .accomodations h2 {
+    padding-left: 0;
+  }
+
   .hotel-cards img {
-    object-fit: cover;
-    width: 100%;
+    /* object-fit: cover; */
+    /* width: 100%; */
     /* height: 50%; */
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
