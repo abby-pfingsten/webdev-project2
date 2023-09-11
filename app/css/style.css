@@ -321,9 +321,9 @@ main {
 }
 .accomodations {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   background-color: #f2f2f2;
-  flex-basis: 60%;
+  flex-basis: 66%;
   border-radius: 20px;
   margin-left: 30px;
 }
@@ -456,3 +456,6 @@ title has */
     margin: 0;
   }
 }
+
+/* ------------------------------------------------------ */
+/* CLASS = MOST POPULAR */
