@@ -435,10 +435,6 @@ title has */
 /* MQ FOR CLASS = ACCOMODATIONS */
 
 @media (max-width: 768px) {
-  main {
-    /* width: 100%; */
-  }
-
   .accomodations {
     display: flex;
     flex-direction: column;
@@ -448,20 +444,6 @@ title has */
 
   .accomodations h2 {
     padding-left: 0;
-  }
-
-  .hotel-cards img {
-    /* object-fit: cover; */
-    /* width: 100%; */
-    /* height: 50%; */
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-style: none;
-    padding: 5px;
-    background-color: white;
-  }
-  .hotel-cards div {
-    width: 100%;
   }
 
   .a-cards {
