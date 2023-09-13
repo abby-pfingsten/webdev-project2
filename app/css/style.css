@@ -511,6 +511,23 @@ i {
   text-decoration: none;
 }
 
+.mp-hotel-cards h2 {
+  font-size: 16px;
+  margin: 0px;
+  padding: 5px;
+}
+
+.mp-hotel-cards p {
+  font-size: 12px;
+  margin: 0px;
+  padding: 5px;
+}
+
+.mp-hotel-cards i {
+  display: flex;
+  flex-direction: row;
+}
+
 .mp-hotel-cards img {
   object-fit: cover;
   width: 30%;
