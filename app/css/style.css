@@ -83,6 +83,7 @@ nav {
     color: #0065fc;
     border-bottom-width: 3px;
   }
+
   /* since in desktop the hover effect was on a
 we have to add this so border from top is not visible */
   .nav-links ul li a:hover {
@@ -439,7 +440,7 @@ title has */
 } */
 
 .show-more {
-  margin-top: -5px;
+  margin-top: 0px;
   margin-left: 10px;
   margin-bottom: 40px;
 }
@@ -482,7 +483,7 @@ title has */
   margin-left: 30px;
   margin-right: 30px;
 }
-
+/* to style  */
 .most-popular h2 {
   margin: 30px 0px 30px 30px;
   font-size: 20px;
@@ -526,7 +527,7 @@ i {
 
 .mp-hotel-cards div {
   display: inline-block;
-  padding: 5px;
+  /* padding: 5px; */
   /* width: 8%; make same width as image  */
   border-top-style: none;
   margin-top: 0;
