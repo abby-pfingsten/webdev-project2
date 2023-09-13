@@ -320,14 +320,20 @@ main {
   flex-direction: row;
 }
 .accomodations {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
   flex-basis: 66%;
+  background-color: #f2f2f2;
   border-radius: 20px;
   margin-left: 30px;
+  padding-top: 10px;
 }
 
+.accomodation-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: -20px;
+}
 .accomodations h2 {
   padding-left: 40px;
   font-size: 16px;
