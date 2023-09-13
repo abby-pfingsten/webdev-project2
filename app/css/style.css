@@ -474,6 +474,19 @@ title has */
     font-size: 13px;
   }
 
+  .a-cards i.full {
+    font-size: 12px;
+    padding-top: 12px;
+  }
+
+  .a-cards i.empty {
+    font-size: 12px;
+  }
+
+  .stars {
+    padding-left: 10px;
+  }
+
   .test {
     width: 90%;
     height: 100%;
