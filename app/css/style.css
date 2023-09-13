@@ -374,8 +374,6 @@ main {
   border-bottom-style: none;
   padding: 3px;
   background-color: white;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-  /* transition: 0.3s; */
 }
 
 .hotel-info {
@@ -438,13 +436,6 @@ title has */
 .a-cards:nth-child(-1) {
   padding-top: 25px;
 }
-
-/* .a-cards:nth-child(-2),
-.a-cards:nth-child(-3),
-.a-cards:nth-child(-4) {
-  padding-top: 15px;
-
-} */
 
 .show-more {
   margin-top: 0px;
