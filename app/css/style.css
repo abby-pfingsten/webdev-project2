@@ -387,7 +387,6 @@ main {
   border-bottom-left-radius: 15px;
 }
 
-
 /* adjust the spacing of the stars */
 .hotel-cards i {
   letter-spacing: -4px; /* Adjust this value to control the spacing */
@@ -409,14 +408,14 @@ main {
 affected by the same padding that the Accomodations
 title has */
 .a-cards h2 {
-  padding: 0;
+  padding-left: 5px;
   font-size: 14px;
   margin-top: 0; /* get the title closer to the image */
 }
 
 /* style the price text of the cards */
 .a-cards p {
-  padding: 0;
+  padding-left: 5px;
   font-size: 12px;
   margin-bottom: 0; /* get the stars closer to this text */
 }
