@@ -342,7 +342,7 @@ main {
 
 .hotel-cards {
   display: grid;
-  grid-template-rows: 250px 1fr;
+  grid-template-rows: 210px 1fr;
   padding-left: 0;
 }
 /* remove underneath hyperlink for each */
@@ -359,7 +359,7 @@ main {
   border-radius: 15px;
   width: 205px;
   background-color: white;
-  height: 70%;
+  height: 85%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -377,7 +377,7 @@ main {
   background-color: white;
 }
 
-.hotel-info {
+/* .hotel-info {
   padding: 2px;
   width: 180px;
   border-top-style: none;
@@ -385,7 +385,7 @@ main {
   background-color: white;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-}
+} */
 
 /* adjust the spacing of the stars */
 .hotel-cards i {
