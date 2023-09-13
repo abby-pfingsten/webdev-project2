@@ -426,6 +426,12 @@ title has */
   text-decoration: none;
 }
 
+.a-cards i.empty {
+  font-size: 5px;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
 .a-cards:nth-child(1),
 .a-cards:nth-child(0),
 .a-cards:nth-child(-1) {
