@@ -359,6 +359,7 @@ main {
   width: 200px;
   background-color: white;
   height: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .test:hover {
@@ -420,7 +421,7 @@ title has */
   margin-bottom: 0; /* get the stars closer to this text */
 }
 
-.a-cards i {
+.a-cards i.full {
   font-size: 5px;
   color: #0065fc;
   text-decoration: none;
