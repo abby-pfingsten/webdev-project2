@@ -354,9 +354,9 @@ main {
 }
 
 .test {
-  border: 2px;
+  border: 4px;
   border-radius: 15px;
-  width: 200px;
+  width: 205px;
   background-color: white;
   height: 70%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -367,12 +367,12 @@ main {
 }
 .hotel-cards img {
   object-fit: cover;
-  width: 195px;
-  height: 50%;
+  width: 198px;
+  height: 55%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-style: none;
-  padding: 2px;
+  padding: 3px;
   background-color: white;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   /* transition: 0.3s; */
