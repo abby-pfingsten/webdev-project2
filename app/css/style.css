@@ -377,27 +377,16 @@ main {
   /* transition: 0.3s; */
 }
 
-.hotel-cards img:hover {
-  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
-}
-
 .hotel-info {
   padding: 2px;
   width: 180px;
-  /* width: 100%; */
-  /* width: 85%; make same width as image  */
   border-top-style: none;
   margin-top: 0;
   background-color: white;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-  /* transition: 0.3s; */
 }
 
-.hotel-cards div:hover {
-  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
-}
 
 /* adjust the spacing of the stars */
 .hotel-cards i {
@@ -410,8 +399,6 @@ main {
 
 .a-cards {
   padding-left: 45px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s; */
 }
 
 .a-cards:visited {
