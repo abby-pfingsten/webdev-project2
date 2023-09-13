@@ -506,13 +506,20 @@ i {
   margin-left: 210px;
   font-size: 20px;
 }
-
-.mp-hotel-cards {
-  /* display: grid; */
-  /* grid-template-rows: 250px 1fr; */
-  /* grid-row-gap: -100px; */
+/* ensure the stars from the cards are not getting 
+affected by the css above */
+.mp-hotel-cards i {
+  margin-left: 0px;
+  display: block;
 }
+
+/* .mp-hotel-cards { */
+/* display: grid; */
+/* grid-template-rows: 250px 1fr; */
+/* grid-row-gap: -100px; */
+/* } */
 /* remove underneath hyperlink for each */
+
 .mp-hotel-cards a {
   text-decoration: none;
 }
@@ -532,6 +539,7 @@ i {
 .mp-hotel-cards i {
   display: flex;
   flex-direction: row;
+  color: blue;
 }
 
 .mp-hotel-cards img {
