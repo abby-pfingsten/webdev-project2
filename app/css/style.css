@@ -460,7 +460,7 @@ title has */
   /*  padding of show more */
   .accomodations h2 {
     padding-left: 10px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .a-cards {
@@ -503,6 +503,11 @@ title has */
 
   .show-more h2 {
     font-size: 17px;
+  }
+
+  .accomodations-title h2 {
+    font-size: 22px;
+    padding: 0;
   }
 }
 
