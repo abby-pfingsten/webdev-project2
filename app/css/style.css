@@ -500,6 +500,10 @@ title has */
     margin-top: 20px;
     margin-left: -10px;
   }
+
+  .show-more h2 {
+    font-size: 17px;
+  }
 }
 
 /* ------------------------------------------------------ */
