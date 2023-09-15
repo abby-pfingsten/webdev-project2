@@ -328,12 +328,19 @@ i {
     padding-right: 25px;
     padding-left: 22px;
   }
-
   #info {
     display: flex;
     align-items: center;
-    font-size: 8px;
+    font-size: 15px;
+    padding: 10px;
     margin-left: 10px;
+    margin-bottom: 12px;
+    margin-right: 1px;
+  }
+
+  #text {
+    font-size: 15px;
+    /* margin-left: -5px; */
   }
 }
 
