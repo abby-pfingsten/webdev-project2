@@ -166,10 +166,16 @@ i {
 /* MQ FOR CLASS = SEARCH  */
 @media (max-width: 768px) {
   .search {
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
     font-size: 15px;
     margin-top: 60px;
     font-size: 20px;
+  }
+
+  .search form {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   p {
     font-size: 20px;
