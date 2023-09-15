@@ -302,6 +302,7 @@ i {
   /* getting the filter buttons closer to the title */
   .filters-container h2 {
     margin-bottom: -10px;
+    font-size: 20px;
   }
 
   /* making the filters closer to the left of the screen */
@@ -311,7 +312,8 @@ i {
   }
   /* the style of the unordered list */
   .filters-container ul li {
-    font-size: 12px;
+    font-size: 15px;
+    margin: 10px;
   }
 
   .filters-container ul li:nth-child(1),
@@ -319,6 +321,9 @@ i {
     order: -1;
   }
 
+  .filters-container ul li a {
+    padding-right: 25px;
+  }
   #info {
     display: flex;
     align-items: center;
