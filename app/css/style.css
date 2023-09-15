@@ -74,12 +74,15 @@ nav {
   .nav-links ul li {
     width: 50%;
     text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: #f2f2f2;
+    border-bottom-width: 3px;
+    padding-bottom: 10px;
   }
 
   .nav-links ul li:hover {
     border-bottom-style: solid;
     border-bottom-color: #0065fc;
-    padding-bottom: 10px;
     color: #0065fc;
     border-bottom-width: 3px;
   }
@@ -323,7 +326,9 @@ i {
 
   .filters-container ul li a {
     padding-right: 25px;
+    padding-left: 22px;
   }
+
   #info {
     display: flex;
     align-items: center;
