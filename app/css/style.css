@@ -448,6 +448,11 @@ title has */
   margin-bottom: 20px;
 }
 
+.show-more a {
+  text-decoration: none;
+  color: black;
+}
+
 /* MQ FOR CLASS = ACCOMODATIONS */
 
 @media (max-width: 768px) {
