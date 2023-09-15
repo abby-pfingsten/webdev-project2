@@ -122,8 +122,8 @@ i {
 .search i#location {
   border-style: solid;
   padding: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
   margin-right: 6px;
@@ -169,10 +169,10 @@ i {
     padding-left: 30px;
     font-size: 15px;
     margin-top: 60px;
-    font-size: 10px;
+    font-size: 20px;
   }
   p {
-    font-size: 15px;
+    font-size: 20px;
   }
   button {
     display: none;
@@ -188,12 +188,17 @@ i {
     border-style: solid;
     padding: 10px;
     padding-top: 12px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #0065fc;
     border-color: #0065fc;
     color: white;
     margin-left: -10px;
-    height: 13px;
+    height: 22px;
+  }
+
+  /* makes the text in the value be bold */
+  #search {
+    height: 42px;
   }
 }
 /* ------------------------------------------------------ */
