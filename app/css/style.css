@@ -181,8 +181,8 @@ i {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  p {
-    font-size: 20px;
+  .search p {
+    font-size: 15px;
   }
   button {
     display: none;
