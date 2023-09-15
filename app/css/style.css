@@ -351,6 +351,7 @@ main {
   display: flex;
   flex-direction: row;
 }
+
 .accomodations {
   display: flex;
   flex-direction: column;
