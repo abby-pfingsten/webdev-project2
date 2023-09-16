@@ -553,7 +553,6 @@ title has */
 /* to style  */
 .mp-title {
   margin: 15px 0px 0px 25px;
-  /* margin: 30px 0px 30px 30px; */
   font-size: 13px;
   display: block;
   color: black;
@@ -563,7 +562,6 @@ title has */
 .mp-title h2,
 i {
   display: inline-block;
-  /* margin-right: 15px; */
 }
 
 .mp-title i {
@@ -571,14 +569,6 @@ i {
   font-size: 20px;
 }
 
-/* ensure the stars from the cards are not getting 
-affected by the css above */
-.mp-a-cards-div i {
-  margin-left: 0px;
-  display: flex;
-  flex-direction: row;
-  font-size: 5px;
-}
 
 /* remove underneath hyperlink for each */
 .mp-a-cards a {
@@ -633,6 +623,9 @@ affected by the css above */
 }
 
 .mp-stars i {
+  color: #0065fc;
   display: inline-block;
   padding: 0;
+  letter-spacing: -4px;
+  font-size: 5px;
 }
