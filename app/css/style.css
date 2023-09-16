@@ -579,6 +579,7 @@ i {
 /* the title of the hotel names */
 .mp-a-cards-div h2 {
   font-size: 16px;
+  padding-left: 10px;
 
   /* padding: -10px 20px 15px 15px; */
 }
@@ -586,9 +587,9 @@ i {
 .mp-a-cards-div p {
   font-size: 12px;
   margin: 0px;
-  padding: 5px;
   color: black;
-  padding: 15px 20px 15px 15px;
+  padding-left: 10px;
+  margin-bottom: 35px;
 }
 
 .mp-hotel-cards {
@@ -598,11 +599,11 @@ i {
 
 .mp-hotel-cards img {
   object-fit: cover;
-  width: 43%;
-  height: 50%;
+  width: 40%;
+  height: 0%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding: 2px;
+  padding: 6px;
   background-color: white;
 }
 
@@ -612,11 +613,11 @@ i {
   margin-top: 0;
   background-color: white;
   border-radius: 15px;
-  /* border-bottom-right-radius: 15px; */
 }
 
 .mp-stars {
   margin-left: 10px;
+  margin-top: -30px;
 }
 
 .mp-stars i {
