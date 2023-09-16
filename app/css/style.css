@@ -581,8 +581,9 @@ affected by the css above */
 }
 
 /* remove underneath hyperlink for each */
-.mp-a-cards-div a {
+.mp-a-cards a {
   text-decoration: none;
+  color: black;
 }
 
 .mp-a-cards-div h2 {
@@ -608,12 +609,12 @@ affected by the css above */
 
 .mp-hotel-cards img {
   object-fit: cover;
-  width: 30%;
+  width: 43%;
   height: 50%;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-style: none;
-  padding: 5px;
+  padding: 2px;
   background-color: white;
   margin-left: 30px;
 }
@@ -625,4 +626,13 @@ affected by the css above */
   background-color: white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.mp-stars {
+  margin-left: 10px;
+}
+
+.mp-stars i {
+  display: inline-block;
+  padding: 0;
 }
