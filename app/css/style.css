@@ -556,7 +556,7 @@ title has */
   margin-left: 30px;
   margin-right: 30px;
 }
-/* to style  */
+/* to style Most Popular title */
 .mp-title {
   margin: 15px 0px 0px 25px;
   font-size: 13px;
@@ -658,6 +658,17 @@ bigger since it was smaller */
   .most-popular {
     border-radius: 0px;
     margin: 0px;
+  }
+
+  /* to style Most Popular title */
+  .mp-title {
+    font-size: 15px;
+  }
+
+  /* position the star to where it is */
+  .mp-title i {
+    margin-left: 165px;
+    font-size: 20px;
   }
 
   /* the title of the hotel names */
