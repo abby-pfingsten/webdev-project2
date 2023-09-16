@@ -584,10 +584,8 @@ i {
 
 /* the title of the hotel names */
 .mp-a-cards-div h2 {
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 10px;
-
-  /* padding: -10px 20px 15px 15px; */
 }
 /* the text for the p tag in for the hotels */
 .mp-a-cards-div p {
@@ -620,6 +618,11 @@ i {
   margin-top: 0;
   background-color: white;
   border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mp-a-cards-div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .mp-hotel-cards div {
@@ -655,5 +658,11 @@ bigger since it was smaller */
   .most-popular {
     border-radius: 0px;
     margin: 0px;
+  }
+
+  /* the title of the hotel names */
+  .mp-a-cards-div h2 {
+    font-size: 16px;
+    padding-left: 10px;
   }
 }
