@@ -478,6 +478,12 @@ title has */
 /* MQ FOR CLASS = ACCOMODATIONS */
 
 @media (max-width: 768px) {
+  /* puts the MP before accomodations */
+  .accomodations-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .accomodations {
     display: flex;
     flex-direction: column;
@@ -639,6 +645,11 @@ i#empty {
 
 /* this makes the last image slightly 
 bigger since it was smaller */
-.mp-hotel-cards:nth-of-type(4) .mp-a-cards-div img {
+/* .mp-hotel-cards:nth-of-type(4) .mp-a-cards-div img {
   width: 44%;
+} */
+
+/* MQ FOR CLASS = MOST POPULAR */
+
+@media (max-width: 768px) {
 }
