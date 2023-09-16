@@ -631,3 +631,7 @@ i {
   letter-spacing: -4px;
   font-size: 5px;
 }
+
+i#empty {
+  color: gray;
+}
