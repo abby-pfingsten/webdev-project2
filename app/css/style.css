@@ -636,3 +636,9 @@ i {
 i#empty {
   color: gray;
 }
+
+/* this makes the last image slightly 
+bigger since it was smaller */
+.mp-hotel-cards:nth-of-type(4) .mp-a-cards-div img {
+  width: 44%;
+}
