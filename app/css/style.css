@@ -600,8 +600,8 @@ i {
 
 .mp-hotel-cards img {
   object-fit: cover;
-  width: 40%;
-  height: 130px;
+  width: 30%;
+  height: 120px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 6px 0px 3px 3px;
