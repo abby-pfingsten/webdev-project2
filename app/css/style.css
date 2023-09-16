@@ -564,11 +564,11 @@ i {
   display: inline-block;
 }
 
+/* position the star to where it is */
 .mp-title i {
   margin-left: 190px;
   font-size: 20px;
 }
-
 
 /* remove underneath hyperlink for each */
 .mp-a-cards a {
@@ -576,12 +576,13 @@ i {
   color: black;
 }
 
+/* the title of the hotel names */
 .mp-a-cards-div h2 {
   font-size: 16px;
-  margin: 0px;
-  padding: 15px 20px 15px 15px;
-}
 
+  /* padding: -10px 20px 15px 15px; */
+}
+/* the text for the p tag in for the hotels */
 .mp-a-cards-div p {
   font-size: 12px;
   margin: 0px;
@@ -590,23 +591,19 @@ i {
   padding: 15px 20px 15px 15px;
 }
 
-.mp-a-cards-div i {
-  display: flex;
-  flex-direction: row;
-  color: blue;
-  padding-left: 15px;
+.mp-hotel-cards {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .mp-hotel-cards img {
   object-fit: cover;
   width: 43%;
   height: 50%;
-  border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
-  border-bottom-style: none;
+  border-bottom-left-radius: 15px;
   padding: 2px;
   background-color: white;
-  margin-left: 30px;
 }
 
 .mp-hotel-cards div {
@@ -614,8 +611,8 @@ i {
   border-top-style: none;
   margin-top: 0;
   background-color: white;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
+  /* border-bottom-right-radius: 15px; */
 }
 
 .mp-stars {
