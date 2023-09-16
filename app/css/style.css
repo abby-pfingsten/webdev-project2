@@ -652,4 +652,8 @@ bigger since it was smaller */
 /* MQ FOR CLASS = MOST POPULAR */
 
 @media (max-width: 768px) {
+  .most-popular {
+    border-radius: 0px;
+    margin: 0px;
+  }
 }
