@@ -593,26 +593,30 @@ i {
 }
 
 .mp-hotel-cards {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .mp-hotel-cards img {
   object-fit: cover;
   width: 40%;
-  height: 0%;
+  height: 130px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding: 6px;
+  padding: 6px 0px 3px 3px;
   background-color: white;
 }
 
-.mp-hotel-cards div {
+.mp-a-cards-div {
   display: inline-block;
   border-top-style: none;
   margin-top: 0;
   background-color: white;
   border-radius: 15px;
+}
+
+.mp-hotel-cards div {
+  display: inline-block;
 }
 
 .mp-stars {
