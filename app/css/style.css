@@ -715,6 +715,26 @@ bigger since it was smaller */
 
 .fort-island {
   flex-basis: 25%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fort {
+  height: 5px;
+}
+.fort img {
+  object-fit: scale-down;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.island img {
+  object-fit: cover;
+  width: 10%;
+  height: 10px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .national-park {
