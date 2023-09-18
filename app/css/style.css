@@ -677,3 +677,38 @@ bigger since it was smaller */
     padding-left: 10px;
   }
 }
+
+/* CLASS = ACTIVITIES ------------------------------ */
+
+.activities-h2 {
+  margin-left: 30px;
+  font-size: 12px;
+}
+.activity-cards {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  justify-content: space-around;
+}
+
+.old-port {
+  flex-basis: 25%;
+}
+
+.old-port img {
+  object-fit: cover;
+  width: 70%;
+  height: 300px;
+}
+
+.fort-island {
+  flex-basis: 25%;
+}
+
+.national-park {
+  flex-basis: 25%;
+}
+
+.notre-dame {
+  flex-basis: 25%;
+}
