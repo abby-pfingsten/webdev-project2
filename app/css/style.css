@@ -883,7 +883,7 @@ footer {
   flex-direction: row;
   justify-content: left;
   margin-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   background-color: #f2f2f2;
   font-size: 12px;
 }
@@ -892,7 +892,7 @@ footer {
 .about {
   display: flex;
   flex-direction: column;
-  margin-right: 150px;
+  margin-right: 120px;
 }
 
 .about a {
@@ -905,6 +905,15 @@ footer {
   justify-content: space-around;
   list-style-type: none;
   color: black;
+}
+
+.about ul h3 {
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+
+.about ul li {
+  margin: 5px;
 }
 
 /* class = our-accomodations */
@@ -926,6 +935,15 @@ footer {
   color: black;
 }
 
+.our-accomodations ul h3 {
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+
+.our-accomodations ul li {
+  margin: 5px;
+}
+
 /* class = assistance */
 .assistance {
   display: flex;
@@ -942,4 +960,13 @@ footer {
   justify-content: space-around;
   list-style-type: none;
   color: black;
+}
+
+.assistance ul h3 {
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+
+.assistance ul li {
+  margin: 5px;
 }
