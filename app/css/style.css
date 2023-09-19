@@ -881,14 +881,18 @@ bigger since it was smaller */
 footer {
   display: flex;
   flex-direction: row;
+  justify-content: left;
   margin-top: 50px;
+  padding-bottom: 50px;
   background-color: #f2f2f2;
+  font-size: 12px;
 }
 
 /* class = about */
 .about {
   display: flex;
   flex-direction: column;
+  margin-right: 150px;
 }
 
 .about a {
@@ -907,6 +911,7 @@ footer {
 .our-accomodations {
   display: flex;
   flex-direction: column;
+  margin-right: 250px;
 }
 
 .our-accomodations a {
@@ -914,6 +919,24 @@ footer {
 }
 
 .our-accomodations ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  color: black;
+}
+
+/* class = assistance */
+.assistance {
+  display: flex;
+  flex-direction: column;
+}
+
+.assistance a {
+  text-decoration: none;
+}
+
+.assistance ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
