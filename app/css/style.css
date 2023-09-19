@@ -687,7 +687,6 @@ bigger since it was smaller */
 .activity-cards {
   display: flex;
   flex-direction: row;
-  margin-left: 30px;
   justify-content: space-around;
 }
 
@@ -829,4 +828,16 @@ bigger since it was smaller */
 }
 .park:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* MQ FOR CLASS = ACTIVITIES */
+@media (max-width: 768px) {
+  .activity-cards {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
