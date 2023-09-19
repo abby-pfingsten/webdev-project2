@@ -687,7 +687,7 @@ bigger since it was smaller */
 .activity-cards {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .old-port {
@@ -873,4 +873,30 @@ bigger since it was smaller */
   .park {
     margin-bottom: 20px;
   }
+}
+
+/* CLASS = FOOTER ------------------------------ */
+
+footer {
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about h3 {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.about a {
+  text-decoration: none;
+}
+
+.about ul {
+  list-style-type: none;
+  color: black;
 }
