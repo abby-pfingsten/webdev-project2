@@ -644,6 +644,7 @@ i {
 .test {
   position: relative;
   width: 180px;
+  height: 0px;
 }
 
 .mp-a-cards-div:hover {
