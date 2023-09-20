@@ -656,8 +656,8 @@ i {
   font-size: 5px;
 }
 
-i#empty {
-  color: gray;
+.mp-stars i.empty {
+  color: #f2f2f2;
 }
 
 /* MQ FOR CLASS = MOST POPULAR ---------------------- */
