@@ -712,9 +712,14 @@ bigger since it was smaller */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.fort {
+.fort-islad {
   flex-basis: 25%;
-  height: 190px;
+}
+
+.fort {
+  /* flex-basis: 25%; */
+  /* height: 190px; */
+  width: 300px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -725,7 +730,7 @@ bigger since it was smaller */
 .fort img {
   object-fit: cover;
   width: 100%;
-  height: 150px;
+  height: 110px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -739,8 +744,8 @@ bigger since it was smaller */
 }
 
 .island {
-  flex-basis: 25%;
-  height: 110px;
+  /* flex-basis: 25%; */
+  /* height: 50px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -750,7 +755,7 @@ bigger since it was smaller */
 .island img {
   object-fit: cover;
   width: 100%;
-  height: 120px;
+  height: 70px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
