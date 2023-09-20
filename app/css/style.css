@@ -372,6 +372,7 @@ main {
 .accomodations h2 {
   padding-left: 40px;
   font-size: 16px;
+  color: black;
 }
 
 .hotel-cards {
@@ -386,6 +387,7 @@ main {
 /* get the nights starting at text closer to hotel title */
 .hotel-cards p {
   margin-top: -5px;
+  color: black;
 }
 
 .a-cards-div {
