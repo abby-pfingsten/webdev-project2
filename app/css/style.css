@@ -712,9 +712,9 @@ bigger since it was smaller */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.fort-islad {
+/* .fort-island {
   flex-basis: 25%;
-}
+} */
 
 .fort {
   /* flex-basis: 25%; */
@@ -794,20 +794,24 @@ bigger since it was smaller */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.notre-dame-park {
+  width: 20%;
+}
 .notre-dame {
-  flex-basis: 25%;
+  /* flex-basis: 25%; */
+  /* width: 300px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  height: 140px;
+  /* height: 140px; */
 }
 
 .notre-dame img {
   object-fit: cover;
   width: 100%;
-  height: 110px;
+  height: 120px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -815,14 +819,16 @@ bigger since it was smaller */
 .notre-dame h2 {
   font-size: 12px;
   padding-left: 10px;
+  margin: 15px 0px 15px 0px;
 }
+
 .notre-dame:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .park {
-  flex-basis: 25%;
-  height: 140px;
+  /* flex-basis: 25%; */
+  /* height: 140px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -832,7 +838,7 @@ bigger since it was smaller */
 .park img {
   object-fit: cover;
   width: 100%;
-  height: 110px;
+  height: 150px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -840,6 +846,7 @@ bigger since it was smaller */
 .park h2 {
   font-size: 12px;
   padding-left: 10px;
+  margin: 15px 0px 15px 0px;
 }
 .park:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -994,7 +1001,7 @@ footer {
 .assistance ul li {
   margin: 5px;
 }
-
+/* MQ FOR FOOTER ----------------------------------- */
 @media (max-width: 768px) {
   footer {
     display: flex;
