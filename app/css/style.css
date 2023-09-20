@@ -883,7 +883,7 @@ footer {
   flex-direction: row;
   justify-content: left;
   margin-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   background-color: #f2f2f2;
   font-size: 12px;
 }
@@ -893,6 +893,13 @@ footer {
   display: flex;
   flex-direction: column;
   margin-right: 120px;
+}
+
+/* styling header of UL */
+.about h3 {
+  margin-left: 45px;
+  margin-bottom: -5px;
+  margin-top: 30px;
 }
 
 .about a {
@@ -907,11 +914,6 @@ footer {
   color: black;
 }
 
-.about ul h3 {
-  margin-left: 3px;
-  margin-bottom: 5px;
-}
-
 .about ul li {
   margin: 5px;
 }
@@ -921,6 +923,12 @@ footer {
   display: flex;
   flex-direction: column;
   margin-right: 250px;
+}
+
+.our-accomodations h3 {
+  margin-left: 45px;
+  margin-bottom: -5px;
+  margin-top: 30px;
 }
 
 .our-accomodations a {
@@ -948,6 +956,13 @@ footer {
 .assistance {
   display: flex;
   flex-direction: column;
+}
+
+/* styling header of UL */
+.assistance h3 {
+  margin-left: 45px;
+  margin-bottom: -5px;
+  margin-top: 30px;
 }
 
 .assistance a {
