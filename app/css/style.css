@@ -585,12 +585,6 @@ i {
   width: 300px;
 }
 
-/* remove underneath hyperlink for each */
-/* .mp-a-cards a {
-  text-decoration: none;
-  color: black;
-} */
-
 /* the title of the hotel names */
 .mp-a-cards-div h2 {
   position: absolute;
@@ -598,8 +592,8 @@ i {
   top: -120px;
   left: 120px;
   width: 190px;
-  /* padding-left: 10px; */
 }
+
 /* the text for the p tag in for the hotels */
 .mp-a-cards-div p {
   font-size: 12px;
@@ -608,9 +602,6 @@ i {
   margin: 0px;
   color: black;
   position: relative;
-
-  /* padding-left: 10px; */
-  /* margin-bottom: 35px; */
 }
 
 .mp-hotel-cards {
@@ -651,16 +642,10 @@ i {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* .mp-hotel-cards div {
-  display: inline-block;
-} */
-
 .mp-stars {
   position: absolute;
   top: -30px;
   left: 120px;
-  /* margin-left: 10px;
-  margin-top: -30px; */
 }
 
 .mp-stars i {
@@ -675,13 +660,7 @@ i#empty {
   color: gray;
 }
 
-/* this makes the last image slightly 
-bigger since it was smaller */
-/* .mp-hotel-cards:nth-of-type(4) .mp-a-cards-div img {
-  width: 44%;
-} */
-
-/* MQ FOR CLASS = MOST POPULAR */
+/* MQ FOR CLASS = MOST POPULAR ---------------------- */
 
 @media (max-width: 768px) {
   .most-popular {
