@@ -878,12 +878,23 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     flex-basis: 100%;
   }
 
   .old-port {
+    height: 130px;
+    margin-bottom: 20px;
+  }
+
+  .old-port img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .old-port h2 {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
