@@ -731,6 +731,7 @@ i {
 }
 
 .fort {
+  width: 250px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -740,7 +741,7 @@ i {
 
 .fort img {
   object-fit: cover;
-  width: 100%;
+  width: 250px;
   height: 120px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -757,6 +758,7 @@ i {
 }
 
 .island {
+  width: 250px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -765,7 +767,7 @@ i {
 
 .island img {
   object-fit: cover;
-  width: 100%;
+  width: 250px;
   height: 80px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -812,6 +814,7 @@ i {
 }
 
 .notre-dame {
+  width: 250px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -821,8 +824,8 @@ i {
 
 .notre-dame img {
   object-fit: cover;
-  width: 100%;
-  height: 100px;
+  width: 250px;
+  height: 115px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -838,6 +841,8 @@ i {
 }
 
 .park {
+  width: 250px;
+
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -848,8 +853,8 @@ i {
 
 .park img {
   object-fit: cover;
-  width: 100%;
-  height: 130px;
+  width: 250px;
+  height: 115px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
