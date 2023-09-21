@@ -731,9 +731,6 @@ i {
 }
 
 .fort {
-  /* flex-basis: 25%; */
-  /* height: 190px; */
-  /* width: 300px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -760,8 +757,6 @@ i {
 }
 
 .island {
-  /* flex-basis: 25%; */
-  /* height: 50px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -812,17 +807,16 @@ i {
 
 .notre-dame-park {
   width: 20%;
+  text-decoration: none;
+  color: black;
 }
 
 .notre-dame {
-  /* flex-basis: 25%; */
-  /* width: 300px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  /* height: 140px; */
 }
 
 .notre-dame img {
@@ -844,8 +838,6 @@ i {
 }
 
 .park {
-  /* flex-basis: 25%; */
-  /* height: 140px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
