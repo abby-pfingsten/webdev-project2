@@ -702,7 +702,7 @@ i {
 
 .old-port {
   flex-basis: 18%;
-  /* margin-right: -20px; */
+  margin-left: -100px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-decoration: none;
@@ -785,7 +785,7 @@ i {
 }
 
 .national-park {
-  flex-basis: 15%;
+  flex-basis: 18%;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-decoration: none;
@@ -886,6 +886,7 @@ i {
   .old-port {
     height: 130px;
     margin-bottom: 20px;
+    margin-left: 0px;
   }
 
   .old-port img {
