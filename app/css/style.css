@@ -896,26 +896,91 @@ i {
   .old-port h2 {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 17px;
   }
 
   .fort {
+    width: 100%;
+    height: 155px;
     margin-bottom: 20px;
+  }
+
+  .fort img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .fort h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
   }
 
   .island {
+    width: 100%;
+    height: 155px;
     margin-bottom: 20px;
+  }
+
+  .island img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .island h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
   }
 
   .national-park {
+    height: 130px;
     margin-bottom: 20px;
+  }
+
+  .national-park img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .national-park h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
   }
 
   .notre-dame {
+    width: 100%;
+    height: 155px;
     margin-bottom: 20px;
   }
 
-  .park {
+  .notre-dame img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .notre-dame h2 {
+    margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  .park {
+    width: 100%;
+    height: 155px;
+    margin-bottom: 20px;
+  }
+
+  .park img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .park h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
   }
 }
 
@@ -1035,7 +1100,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin-top: 50px;
+    margin-top: 20px;
     padding-bottom: 25px;
     background-color: #f2f2f2;
     font-size: 16px;
