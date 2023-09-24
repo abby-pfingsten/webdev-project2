@@ -423,7 +423,7 @@ main {
 }
 
 .a-cards {
-padding-left: 35px;
+  padding-left: 35px;
 }
 
 .a-cards:visited {
@@ -693,12 +693,11 @@ title has */
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* gap: 100px; */
 }
 
 .old-port {
   flex-basis: 18%;
-  margin-left: -100px;
+  margin-left: -10px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-decoration: none;
