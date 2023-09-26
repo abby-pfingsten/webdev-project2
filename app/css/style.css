@@ -684,6 +684,11 @@ title has */
 
 /* CLASS = ACTIVITIES ------------------------------ */
 
+.activities-section {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
 .activities-h2 {
   margin-left: 30px;
   font-size: 12px;
@@ -693,10 +698,11 @@ title has */
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 35px;
 }
 
 .old-port {
-  flex-basis: 18%;
+  flex-basis: 25%;
   margin-left: -10px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -721,13 +727,13 @@ title has */
 }
 
 .fort-island {
-  /* width: 15%; */
+  flex-basis: 25%;
   text-decoration: none;
   color: black;
 }
 
 .fort {
-  width: 250px;
+  /* width: 250px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -737,7 +743,7 @@ title has */
 
 .fort img {
   object-fit: cover;
-  width: 250px;
+  /* width: 250px; */
   height: 120px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -754,7 +760,7 @@ title has */
 }
 
 .island {
-  width: 250px;
+  /* width: 250px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -763,7 +769,7 @@ title has */
 
 .island img {
   object-fit: cover;
-  width: 250px;
+  /* width: 250px; */
   height: 80px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -780,7 +786,7 @@ title has */
 }
 
 .national-park {
-  flex-basis: 18%;
+  flex-basis: 25%;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-decoration: none;
@@ -810,7 +816,7 @@ title has */
 }
 
 .notre-dame {
-  width: 250px;
+  /* width: 250px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -820,7 +826,7 @@ title has */
 
 .notre-dame img {
   object-fit: cover;
-  width: 250px;
+  /* width: 250px; */
   height: 115px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -837,7 +843,7 @@ title has */
 }
 
 .park {
-  width: 250px;
+  /* width: 250px; */
 
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -849,7 +855,7 @@ title has */
 
 .park img {
   object-fit: cover;
-  width: 250px;
+  /* width: 250px; */
   height: 115px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
