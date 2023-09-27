@@ -18,8 +18,8 @@ nav {
 }
 
 #booki-logo {
-  padding-left: 20px;
-  padding-top: 15px;
+  margin-left: 20px;
+  margin-top: 15px;
   width: 100px;
 }
 
@@ -27,6 +27,10 @@ nav {
 .nav-links {
   flex: 1;
   text-align: right;
+}
+
+.nav-links ul {
+  margin-top: 12px;
 }
 .nav-links ul li {
   list-style: none;
