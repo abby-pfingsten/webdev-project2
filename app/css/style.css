@@ -563,17 +563,24 @@ title has */
 }
 /* to style Most Popular title */
 .mp-title {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 160px;
   padding: 15px 0px 0px 10px;
   font-size: 13px;
   color: black;
 }
 
+.mp-title h2 {
+  margin-left: 20px;
+}
+
 /* position the star to where it is */
 .mp-title i {
   margin-top: 20px;
+  margin-right: 20px;
   font-size: 20px;
 }
 
