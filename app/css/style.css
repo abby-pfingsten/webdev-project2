@@ -74,12 +74,15 @@ nav {
   .nav-links ul li {
     width: 50%;
     text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: #f2f2f2;
+    border-bottom-width: 3px;
+    padding-bottom: 10px;
   }
 
   .nav-links ul li:hover {
     border-bottom-style: solid;
     border-bottom-color: #0065fc;
-    padding-bottom: 10px;
     color: #0065fc;
     border-bottom-width: 3px;
   }
@@ -122,8 +125,8 @@ i {
 .search i#location {
   border-style: solid;
   padding: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   background-color: #f2f2f2;
   border-color: #f2f2f2;
   margin-right: 6px;
@@ -161,17 +164,28 @@ i {
   height: 36px;
   border-style: none;
   margin-left: -10px;
+  cursor: pointer;
 }
 
 /* MQ FOR CLASS = SEARCH  */
 @media (max-width: 768px) {
   .search {
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
     font-size: 15px;
     margin-top: 60px;
-    font-size: 10px;
+    font-size: 20px;
   }
-  p {
+
+  .search h1 {
+    font-size: 23px;
+  }
+
+  .search form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .search p {
     font-size: 15px;
   }
   button {
@@ -188,12 +202,18 @@ i {
     border-style: solid;
     padding: 10px;
     padding-top: 12px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #0065fc;
     border-color: #0065fc;
     color: white;
     margin-left: -10px;
-    height: 13px;
+    height: 22px;
+    cursor: pointer;
+  }
+
+  /* makes the text in the value be bold */
+  #search {
+    height: 42px;
   }
 }
 /* ------------------------------------------------------ */
@@ -287,6 +307,7 @@ i {
   /* getting the filter buttons closer to the title */
   .filters-container h2 {
     margin-bottom: -10px;
+    font-size: 20px;
   }
 
   /* making the filters closer to the left of the screen */
@@ -296,7 +317,8 @@ i {
   }
   /* the style of the unordered list */
   .filters-container ul li {
-    font-size: 12px;
+    font-size: 15px;
+    margin: 10px;
   }
 
   .filters-container ul li:nth-child(1),
@@ -304,11 +326,22 @@ i {
     order: -1;
   }
 
+  .filters-container ul li a {
+    padding-right: 25px;
+    padding-left: 22px;
+  }
   #info {
     display: flex;
     align-items: center;
-    font-size: 8px;
+    font-size: 15px;
+    padding: 10px;
     margin-left: 10px;
+    margin-bottom: 12px;
+    margin-right: 1px;
+  }
+
+  #text {
+    font-size: 15px;
   }
 }
 
@@ -320,6 +353,7 @@ main {
   display: flex;
   flex-direction: row;
 }
+
 .accomodations {
   display: flex;
   flex-direction: column;
@@ -338,6 +372,7 @@ main {
 .accomodations h2 {
   padding-left: 40px;
   font-size: 16px;
+  color: black;
 }
 
 .hotel-cards {
@@ -352,9 +387,10 @@ main {
 /* get the nights starting at text closer to hotel title */
 .hotel-cards p {
   margin-top: -5px;
+  color: black;
 }
 
-.test {
+.a-cards-div {
   border: 4px;
   border-radius: 15px;
   width: 205px;
@@ -363,7 +399,7 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.test:hover {
+.a-cards-div:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .hotel-cards img {
@@ -377,16 +413,6 @@ main {
   background-color: white;
 }
 
-/* .hotel-info {
-  padding: 2px;
-  width: 180px;
-  border-top-style: none;
-  margin-top: 0;
-  background-color: white;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-} */
-
 /* adjust the spacing of the stars */
 .hotel-cards i {
   letter-spacing: -4px; /* Adjust this value to control the spacing */
@@ -397,7 +423,7 @@ main {
 }
 
 .a-cards {
-  padding-left: 45px;
+  padding-left: 35px;
 }
 
 .a-cards:visited {
@@ -448,9 +474,20 @@ title has */
   margin-bottom: 20px;
 }
 
+.show-more a {
+  text-decoration: none;
+  color: black;
+}
+
 /* MQ FOR CLASS = ACCOMODATIONS */
 
 @media (max-width: 768px) {
+  /* puts the MP before accomodations */
+  .accomodations-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .accomodations {
     display: flex;
     flex-direction: column;
@@ -487,7 +524,7 @@ title has */
     padding-left: 10px;
   }
 
-  .test {
+  .a-cards-div {
     width: 90%;
     height: 100%;
   }
@@ -517,89 +554,569 @@ title has */
 .most-popular {
   display: flex;
   flex-direction: column;
-  /* grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); */
+  align-items: center;
   background-color: #f2f2f2;
   flex-basis: 33%;
   border-radius: 20px;
   margin-left: 30px;
   margin-right: 30px;
 }
-/* to style  */
-.most-popular h2 {
-  margin: 30px 0px 30px 30px;
-  font-size: 20px;
-  display: block;
+/* to style Most Popular title */
+.mp-title {
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+  padding: 15px 0px 0px 10px;
+  font-size: 13px;
   color: black;
 }
 
-/* have star be next to title */
-.most-popular h2,
-i {
-  display: inline-block;
-}
-
-.most-popular i {
-  margin-left: 210px;
+/* position the star to where it is */
+.mp-title i {
+  margin-top: 20px;
   font-size: 20px;
 }
-/* ensure the stars from the cards are not getting 
-affected by the css above */
-.mp-hotel-cards i {
-  margin-left: 0px;
-  display: flex;
-  flex-direction: row;
-  font-size: 5px;
+
+.mp-a-cards {
+  width: 300px;
 }
 
-/* remove underneath hyperlink for each */
-.mp-hotel-cards a {
-  text-decoration: none;
+/* the title of the hotel names */
+.mp-a-cards-div h2 {
+  position: absolute;
+  font-size: 14px;
+  top: -120px;
+  left: 120px;
+  width: 170px;
 }
 
-.mp-hotel-cards h2 {
-  font-size: 16px;
-  margin: 0px;
-  padding: 15px 20px 15px 15px;
-}
-
-.mp-hotel-cards p {
+/* the text for the p tag in for the hotels */
+.mp-a-cards-div p {
   font-size: 12px;
+  top: -70px;
+  left: 120px;
   margin: 0px;
-  padding: 5px;
   color: black;
-  padding: 15px 20px 15px 15px;
+  position: relative;
 }
 
-.mp-hotel-cards i {
-  display: flex;
-  flex-direction: row;
-  color: blue;
-  padding-left: 15px;
+.mp-hotel-cards {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
 }
 
 .mp-hotel-cards img {
   object-fit: cover;
-  width: 30%;
-  height: 50%;
-  border-bottom-left-radius: 15px;
+  width: 35%;
+  height: 110px;
   border-top-left-radius: 15px;
-  border-bottom-style: none;
-  padding: 5px;
+  border-bottom-left-radius: 15px;
+  padding: 5px 0px 1px 5px;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  margin-left: 30px;
 }
 
-.mp-hotel-cards div {
+.mp-a-cards-div {
   display: inline-block;
-  /* padding: 5px; */
-  /* width: 8%; make same width as image  */
   border-top-style: none;
   margin-top: 0;
   background-color: white;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.mp-info-div {
+  position: relative;
+  width: 180px;
+  height: 0px;
+}
+
+.mp-a-cards-div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mp-stars {
+  position: absolute;
+  top: -30px;
+  left: 120px;
+}
+
+.mp-stars i {
+  color: #0065fc;
+  display: inline-block;
+  padding: 0;
+  letter-spacing: -4px;
+  font-size: 5px;
+}
+
+.mp-stars i.empty {
+  color: #f2f2f2;
+}
+
+/* MQ FOR CLASS = MOST POPULAR ---------------------- */
+
+@media (max-width: 768px) {
+  .most-popular {
+    border-radius: 0px;
+    margin: 0px;
+  }
+
+  /* to style Most Popular title */
+  .mp-title {
+    font-size: 15px;
+  }
+
+  /* position the star to where it is */
+  .mp-title i {
+    margin-left: 0px;
+    font-size: 20px;
+  }
+
+  /* the title of the hotel names */
+  .mp-a-cards-div h2 {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+}
+
+/* CLASS = ACTIVITIES ------------------------------ */
+
+.activities-section {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.activities-h2 {
+  margin-left: 30px;
+  font-size: 12px;
+}
+.activity-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+}
+
+.old-port {
+  flex-basis: 25%;
+  margin-left: -10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
+}
+
+.old-port img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.old-port h2 {
+  font-size: 12px;
+  padding-left: 10px;
+}
+.old-port:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fort-island {
+  flex-basis: 25%;
+  text-decoration: none;
+  color: black;
+}
+
+.fort {
+  /* width: 250px; */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+
+.fort img {
+  object-fit: cover;
+  /* width: 250px; */
+  height: 120px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.fort h2 {
+  font-size: 12px;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.fort:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.island {
+  /* width: 250px; */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.island img {
+  object-fit: cover;
+  /* width: 250px; */
+  height: 80px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.island h2 {
+  font-size: 12px;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.island:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.national-park {
+  flex-basis: 25%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
+}
+
+.national-park img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.national-park h2 {
+  font-size: 12px;
+  padding-left: 10px;
+}
+.national-park:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.notre-dame-park {
+  /* width: 20%; */
+  flex-basis: 25%;
+  text-decoration: none;
+  color: black;
+}
+
+.notre-dame {
+  /* width: 250px; */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.notre-dame img {
+  object-fit: cover;
+  /* width: 250px; */
+  height: 115px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.notre-dame h2 {
+  font-size: 12px;
+  padding-left: 10px;
+  margin: 15px 0px 15px 0px;
+}
+
+.notre-dame:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.park {
+  /* width: 250px; */
+
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+
+.park img {
+  object-fit: cover;
+  /* width: 250px; */
+  height: 115px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.park h2 {
+  font-size: 12px;
+  padding-left: 10px;
+  margin: 15px 0px 15px 0px;
+}
+.park:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  .activity-cards {
+    flex-wrap: wrap;
+  }
+}
+
+/* MQ FOR CLASS = ACTIVITIES */
+@media (max-width: 768px) {
+  .activities-h2 h2 {
+    font-size: 20px;
+  }
+  .activity-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-basis: 100%;
+  }
+
+  .old-port {
+    height: 130px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  .old-port img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .old-port h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .fort {
+    width: 100%;
+    height: 155px;
+    margin-bottom: 20px;
+  }
+
+  .fort img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .fort h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .island {
+    width: 100%;
+    height: 155px;
+    margin-bottom: 20px;
+  }
+
+  .island img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .island h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .national-park {
+    height: 130px;
+    margin-bottom: 20px;
+  }
+
+  .national-park img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .national-park h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .notre-dame {
+    width: 100%;
+    height: 155px;
+    margin-bottom: 20px;
+  }
+
+  .notre-dame img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .notre-dame h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .park {
+    width: 100%;
+    height: 155px;
+    margin-bottom: 20px;
+  }
+
+  .park img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .park h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+}
+
+/* CLASS = FOOTER ------------------------------ */
+
+/* making it so that the footer has 3 columns of info */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 50px;
+  padding-bottom: 25px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+}
+
+/* class = about */
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+}
+
+/* styling header of UL */
+.about h3 {
+  margin-left: 45px;
+  margin-bottom: -5px;
+  margin-top: 30px;
+}
+
+.about a {
+  text-decoration: none;
+}
+
+.about ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  color: black;
+}
+
+.about ul li {
+  margin: 5px;
+}
+
+/* class = our-accomodations */
+.our-accomodations {
+  display: flex;
+  flex-direction: column;
+  margin-right: 250px;
+}
+
+.our-accomodations h3 {
+  margin-left: 45px;
+  margin-bottom: -5px;
+  margin-top: 30px;
+}
+
+.our-accomodations a {
+  text-decoration: none;
+}
+
+.our-accomodations ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  color: black;
+}
+
+.our-accomodations ul h3 {
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+
+.our-accomodations ul li {
+  margin: 5px;
+}
+
+/* class = assistance */
+.assistance {
+  display: flex;
+  flex-direction: column;
+}
+
+/* styling header of UL */
+.assistance h3 {
+  margin-left: 45px;
+  margin-bottom: -5px;
+  margin-top: 30px;
+}
+
+.assistance a {
+  text-decoration: none;
+}
+
+.assistance ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  color: black;
+}
+
+.assistance ul h3 {
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+
+.assistance ul li {
+  margin: 5px;
+}
+/* MQ FOR FOOTER ----------------------------------- */
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 20px;
+    padding-bottom: 25px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+  }
+
+  /* class = our-accomodations */
+  .our-accomodations {
+    width: 100%;
+  }
 }
