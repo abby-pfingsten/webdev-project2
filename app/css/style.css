@@ -811,6 +811,7 @@ title has */
 
 .notre-dame-park {
   /* width: 20%; */
+  flex-basis: 25%;
   text-decoration: none;
   color: black;
 }
@@ -868,6 +869,12 @@ title has */
 }
 .park:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  .activity-cards {
+    flex-wrap: wrap;
+  }
 }
 
 /* MQ FOR CLASS = ACTIVITIES */
