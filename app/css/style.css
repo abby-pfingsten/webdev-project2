@@ -690,7 +690,6 @@ title has */
 }
 
 .activities-h2 {
-  margin-left: 30px;
   font-size: 12px;
 }
 .activity-cards {
@@ -871,7 +870,7 @@ title has */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .activity-cards {
     flex-wrap: wrap;
   }
@@ -886,9 +885,10 @@ title has */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
     flex-basis: 100%;
+    gap: 0px;
   }
 
   .old-port {
