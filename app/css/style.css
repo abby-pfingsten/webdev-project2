@@ -566,11 +566,10 @@ title has */
 }
 /* to style Most Popular title */
 .mp-title {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 160px;
+  gap: 245px;
   padding: 15px 0px 0px 10px;
   font-size: 13px;
   color: black;
@@ -677,6 +676,7 @@ title has */
   /* to style Most Popular title */
   .mp-title {
     font-size: 15px;
+    gap: 160px;
   }
 
   /* position the star to where it is */
@@ -874,6 +874,7 @@ title has */
 @media (min-width: 768px) and (max-width: 992px) {
   .activity-cards {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
