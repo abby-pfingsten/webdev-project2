@@ -18,8 +18,8 @@ nav {
 }
 
 #booki-logo {
-  padding-left: 20px;
-  padding-top: 15px;
+  margin-left: 20px;
+  margin-top: 15px;
   width: 100px;
 }
 
@@ -27,6 +27,10 @@ nav {
 .nav-links {
   flex: 1;
   text-align: right;
+}
+
+.nav-links ul {
+  margin-top: 12px;
 }
 .nav-links ul li {
   list-style: none;
@@ -451,7 +455,7 @@ title has */
 }
 
 .a-cards i.full {
-  font-size: 5px;
+  font-size: 10px;
   color: #0065fc;
   text-decoration: none;
 }
@@ -503,7 +507,6 @@ title has */
   .a-cards {
     padding-left: 0px;
     width: 100%;
-    /* margin-right: -100px; */
   }
 
   .a-cards p {
@@ -565,15 +568,21 @@ title has */
 .mp-title {
   display: flex;
   flex-direction: row;
-  gap: 160px;
+  justify-content: space-between;
+  gap: 245px;
   padding: 15px 0px 0px 10px;
   font-size: 13px;
   color: black;
 }
 
+.mp-title h2 {
+  margin-left: 20px;
+}
+
 /* position the star to where it is */
 .mp-title i {
   margin-top: 20px;
+  margin-right: 20px;
   font-size: 20px;
 }
 
@@ -649,7 +658,7 @@ title has */
   display: inline-block;
   padding: 0;
   letter-spacing: -4px;
-  font-size: 5px;
+  font-size: 10px;
 }
 
 .mp-stars i.empty {
@@ -667,6 +676,7 @@ title has */
   /* to style Most Popular title */
   .mp-title {
     font-size: 15px;
+    gap: 160px;
   }
 
   /* position the star to where it is */
@@ -690,8 +700,8 @@ title has */
 }
 
 .activities-h2 {
-  margin-left: 30px;
   font-size: 12px;
+  margin-left: -8px;
 }
 .activity-cards {
   display: flex;
@@ -733,7 +743,6 @@ title has */
 }
 
 .fort {
-  /* width: 250px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -743,7 +752,6 @@ title has */
 
 .fort img {
   object-fit: cover;
-  /* width: 250px; */
   height: 120px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -760,7 +768,6 @@ title has */
 }
 
 .island {
-  /* width: 250px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -769,7 +776,6 @@ title has */
 
 .island img {
   object-fit: cover;
-  /* width: 250px; */
   height: 80px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -810,14 +816,12 @@ title has */
 }
 
 .notre-dame-park {
-  /* width: 20%; */
   flex-basis: 25%;
   text-decoration: none;
   color: black;
 }
 
 .notre-dame {
-  /* width: 250px; */
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -827,7 +831,6 @@ title has */
 
 .notre-dame img {
   object-fit: cover;
-  /* width: 250px; */
   height: 115px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -844,8 +847,6 @@ title has */
 }
 
 .park {
-  /* width: 250px; */
-
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -856,7 +857,6 @@ title has */
 
 .park img {
   object-fit: cover;
-  /* width: 250px; */
   height: 115px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -871,9 +871,10 @@ title has */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .activity-cards {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -886,9 +887,8 @@ title has */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
     flex-basis: 100%;
+    gap: 0px;
   }
 
   .old-port {
@@ -999,9 +999,8 @@ title has */
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: space-evenly;
   margin-top: 50px;
-  padding-bottom: 25px;
   background-color: #f2f2f2;
   font-size: 12px;
 }
@@ -1010,7 +1009,7 @@ footer {
 .about {
   display: flex;
   flex-direction: column;
-  margin-right: 120px;
+  flex-basis: 33%;
 }
 
 /* styling header of UL */
@@ -1040,7 +1039,7 @@ footer {
 .our-accomodations {
   display: flex;
   flex-direction: column;
-  margin-right: 250px;
+  flex-basis: 33%;
 }
 
 .our-accomodations h3 {
@@ -1074,6 +1073,7 @@ footer {
 .assistance {
   display: flex;
   flex-direction: column;
+  flex-basis: 33%;
 }
 
 /* styling header of UL */
